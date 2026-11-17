@@ -54,4 +54,4 @@ Then open http://localhost:8000.
 
 ## Before launch
 
-Search the site for `class="ph"`: those yellow placeholders (who runs the site, contact email, country) must be filled in.
+Before publishing new pages, search for `class="ph"`: that marks yellow placeholder text that still needs filling in.
