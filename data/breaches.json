@@ -4,7 +4,9 @@
   "companies": [
     {
       "name": "Equifax",
-      "aliases": ["Equifax Inc."],
+      "aliases": [
+        "Equifax Inc."
+      ],
       "website": "equifax.com",
       "breaches": [
         {
@@ -12,16 +14,32 @@
           "date": "2017-05",
           "status": "confirmed",
           "affected": "About 147 million people",
-          "categories": ["Names", "Dates of birth", "Social Security numbers", "Home addresses", "Phone numbers", "Email addresses", "Payment card numbers"],
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Social Security numbers",
+            "Home addresses",
+            "Phone numbers",
+            "Email addresses",
+            "Payment card numbers"
+          ],
           "description": "Attackers got into Equifax systems between May and July 2017 and took personal information on about 147 million people. In 2019 Equifax agreed to pay at least $575 million in a settlement with the US Federal Trade Commission, the Consumer Financial Protection Bureau and US states.",
           "source_name": "US Federal Trade Commission",
-          "source_url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach"
+          "source_url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach",
+          "statement": {
+            "title": "Equifax Announces Cybersecurity Incident Involving Consumer Information",
+            "url": "https://investor.equifax.com/news-events/press-releases/detail/240/equifax-announces-cybersecurity-incident-involving-consumer"
+          }
         }
       ]
     },
     {
       "name": "Marriott International",
-      "aliases": ["Marriott", "Starwood", "Starwood Hotels"],
+      "aliases": [
+        "Marriott",
+        "Starwood",
+        "Starwood Hotels"
+      ],
       "website": "marriott.com",
       "breaches": [
         {
@@ -29,16 +47,30 @@
           "date": "2014",
           "status": "confirmed",
           "affected": "Around 339 million guest records worldwide",
-          "categories": ["Names", "Email addresses", "Phone numbers", "Passport numbers", "Home addresses", "Loyalty programme numbers", "Stay and booking details"],
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Phone numbers",
+            "Passport numbers",
+            "Home addresses",
+            "Loyalty programme numbers",
+            "Stay and booking details"
+          ],
           "description": "Attackers got into the reservation systems of Starwood Hotels in 2014, before Marriott bought the company. The breach was not found until 2018. In 2020 the UK Information Commissioner's Office fined Marriott £18.4 million, saying it failed to keep personal data secure.",
           "source_name": "UK Information Commissioner's Office, penalty notice",
-          "source_url": "https://ico.org.uk/media2/migrated/2618524/marriott-international-inc-mpn-20201030.pdf"
+          "source_url": "https://ico.org.uk/media2/migrated/2618524/marriott-international-inc-mpn-20201030.pdf",
+          "statement": {
+            "title": "Marriott Announces Starwood Guest Reservation Database Security Incident",
+            "url": "https://news.marriott.com/news/2018/11/30/marriott-announces-starwood-guest-reservation-database-security-incident"
+          }
         }
       ]
     },
     {
       "name": "British Airways",
-      "aliases": ["BA"],
+      "aliases": [
+        "BA"
+      ],
       "website": "britishairways.com",
       "breaches": [
         {
@@ -46,16 +78,24 @@
           "date": "2018-08",
           "status": "confirmed",
           "affected": "More than 400,000 customers and staff",
-          "categories": ["Names", "Home addresses", "Payment card details", "Card security codes (CVV)"],
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Payment card details",
+            "Card security codes (CVV)"
+          ],
           "description": "For about two weeks in August and September 2018, attackers copied payment card details that people typed into the British Airways website. In 2020 the UK Information Commissioner's Office fined the airline £20 million.",
           "source_name": "UK Information Commissioner's Office, penalty notice",
-          "source_url": "https://ico.org.uk/media2/migrated/2618421/ba-penalty-20201016.pdf"
+          "source_url": "https://ico.org.uk/media2/migrated/2618421/ba-penalty-20201016.pdf",
+          "statement": null
         }
       ]
     },
     {
       "name": "Ticketmaster UK",
-      "aliases": ["Ticketmaster"],
+      "aliases": [
+        "Ticketmaster"
+      ],
       "website": "ticketmaster.co.uk",
       "breaches": [
         {
@@ -63,16 +103,24 @@
           "date": "2018",
           "status": "confirmed",
           "affected": "9.4 million customers across Europe, including 1.5 million in the UK",
-          "categories": ["Names", "Payment card details", "Card security codes (CVV)"],
+          "categories": [
+            "Names",
+            "Payment card details",
+            "Card security codes (CVV)"
+          ],
           "description": "Attackers compromised a chatbot that was installed on Ticketmaster's online payment page. In November 2020 the UK Information Commissioner's Office fined Ticketmaster UK £1.25 million for not having proper security in place.",
           "source_name": "UK Information Commissioner's Office, annual report 2020/21",
-          "source_url": "https://ico.org.uk/media2/migrated/2620166/hc-354-information-commissioners-ara-2020-21.pdf"
+          "source_url": "https://ico.org.uk/media2/migrated/2620166/hc-354-information-commissioners-ara-2020-21.pdf",
+          "statement": null
         }
       ]
     },
     {
       "name": "Facebook",
-      "aliases": ["Meta", "Meta Platforms"],
+      "aliases": [
+        "Meta",
+        "Meta Platforms"
+      ],
       "website": "facebook.com",
       "breaches": [
         {
@@ -80,16 +128,29 @@
           "date": "2019",
           "status": "confirmed",
           "affected": "About 533 million users worldwide",
-          "categories": ["Names", "Phone numbers", "Facebook user IDs", "Locations", "Email addresses (some)", "Dates of birth (some)"],
+          "categories": [
+            "Names",
+            "Phone numbers",
+            "Facebook user IDs",
+            "Locations",
+            "Email addresses (some)",
+            "Dates of birth (some)"
+          ],
           "description": "This was not a hack of Facebook's servers. People abused Facebook's search and contact-import tools between 2018 and 2019 to collect, or \"scrape\", profile information, which was later posted online in 2021. In 2022 Ireland's Data Protection Commission fined Meta €265 million.",
           "source_name": "Data Protection Commission (Ireland)",
-          "source_url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-decision-in-facebook-data-scraping-inquiry"
+          "source_url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-decision-in-facebook-data-scraping-inquiry",
+          "statement": {
+            "title": "The Facts on News Reports About Facebook Data",
+            "url": "https://about.fb.com/news/2021/04/facts-on-news-reports-about-facebook-data/"
+          }
         }
       ]
     },
     {
       "name": "Capital One",
-      "aliases": ["Capital One Financial"],
+      "aliases": [
+        "Capital One Financial"
+      ],
       "website": "capitalone.com",
       "breaches": [
         {
@@ -97,16 +158,32 @@
           "date": "2019-03",
           "status": "confirmed",
           "affected": "About 100 million people in the US and 6 million in Canada",
-          "categories": ["Names", "Home addresses", "Phone numbers", "Email addresses", "Dates of birth", "Social Security numbers", "Bank account numbers", "Income and credit information"],
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Phone numbers",
+            "Email addresses",
+            "Dates of birth",
+            "Social Security numbers",
+            "Bank account numbers",
+            "Income and credit information"
+          ],
           "description": "An outside person used a configuration weakness to take data in March 2019, mostly from people who had applied for Capital One credit cards. Capital One says about 140,000 US Social Security numbers, 80,000 bank account numbers and about 1 million Canadian Social Insurance Numbers were included.",
           "source_name": "Capital One",
-          "source_url": "https://www.capitalone.com/digital/facts2019/"
+          "source_url": "https://www.capitalone.com/digital/facts2019/",
+          "statement": {
+            "title": "2019 Capital One Cyber Incident",
+            "url": "https://www.capitalone.com/digital/facts2019/"
+          }
         }
       ]
     },
     {
       "name": "Yahoo",
-      "aliases": ["Altaba", "Yahoo!"],
+      "aliases": [
+        "Altaba",
+        "Yahoo!"
+      ],
       "website": "yahoo.com",
       "breaches": [
         {
@@ -114,16 +191,29 @@
           "date": "2014",
           "status": "confirmed",
           "affected": "Hundreds of millions of user accounts",
-          "categories": ["Names", "Email addresses", "Phone numbers", "Dates of birth", "Hashed passwords", "Security questions and answers"],
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Phone numbers",
+            "Dates of birth",
+            "Hashed passwords",
+            "Security questions and answers"
+          ],
           "description": "Hackers stole data on hundreds of millions of Yahoo accounts in 2014. The US Securities and Exchange Commission said Yahoo did not tell investors for almost two years, and in 2018 the company, then called Altaba, agreed to pay a $35 million penalty.",
           "source_name": "US Securities and Exchange Commission",
-          "source_url": "https://www.sec.gov/newsroom/press-releases/2018-71"
+          "source_url": "https://www.sec.gov/newsroom/press-releases/2018-71",
+          "statement": {
+            "title": "An Important Message to Yahoo Users on Security (filed with the SEC)",
+            "url": "https://www.sec.gov/Archives/edgar/data/0001011006/000119312516717056/d260014dex991.htm"
+          }
         }
       ]
     },
     {
       "name": "Uber",
-      "aliases": ["Uber Technologies"],
+      "aliases": [
+        "Uber Technologies"
+      ],
       "website": "uber.com",
       "breaches": [
         {
@@ -131,16 +221,27 @@
           "date": "2016-10",
           "status": "confirmed",
           "affected": "Tens of millions of riders and drivers",
-          "categories": ["Names", "Email addresses", "Phone numbers", "Driver's licence numbers"],
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Phone numbers",
+            "Driver's licence numbers"
+          ],
           "description": "Attackers took rider and driver data in late 2016. The US Federal Trade Commission says Uber did not tell consumers or the FTC about it for more than a year. Uber agreed to an expanded settlement with the FTC in 2018.",
           "source_name": "US Federal Trade Commission",
-          "source_url": "https://www.ftc.gov/news-events/news/press-releases/2018/04/uber-agrees-expanded-settlement-ftc-related-privacy-security-claims"
+          "source_url": "https://www.ftc.gov/news-events/news/press-releases/2018/04/uber-agrees-expanded-settlement-ftc-related-privacy-security-claims",
+          "statement": {
+            "title": "2016 Data Security Incident",
+            "url": "https://www.uber.com/newsroom/2016-data-incident/"
+          }
         }
       ]
     },
     {
       "name": "23andMe",
-      "aliases": ["23 and me"],
+      "aliases": [
+        "23 and me"
+      ],
       "website": "23andme.com",
       "breaches": [
         {
@@ -148,16 +249,28 @@
           "date": "2023",
           "status": "confirmed",
           "affected": "155,592 people in the UK, and millions worldwide",
-          "categories": ["Names", "Health reports", "Ancestry and ethnicity information", "Family tree information", "Locations"],
+          "categories": [
+            "Names",
+            "Health reports",
+            "Ancestry and ethnicity information",
+            "Family tree information",
+            "Locations"
+          ],
           "description": "Between April and September 2023, an attacker logged in to accounts using passwords leaked in other, unrelated breaches, then reached data shared with relatives. In 2025 the UK Information Commissioner's Office fined 23andMe £2.31 million, pointing to the lack of mandatory two-step login.",
           "source_name": "UK Information Commissioner's Office",
-          "source_url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/23andme-fined-for-failing-to-protect-uk-users-genetic-data/"
+          "source_url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/23andme-fined-for-failing-to-protect-uk-users-genetic-data/",
+          "statement": {
+            "title": "Addressing Data Security Concerns",
+            "url": "https://blog.23andme.com/articles/addressing-data-security-concerns"
+          }
         }
       ]
     },
     {
       "name": "T-Mobile US",
-      "aliases": ["T-Mobile"],
+      "aliases": [
+        "T-Mobile"
+      ],
       "website": "t-mobile.com",
       "breaches": [
         {
@@ -165,16 +278,29 @@
           "date": "2021-08",
           "status": "confirmed",
           "affected": "About 40 million former or prospective customers and 7.8 million current customers",
-          "categories": ["Names", "Dates of birth", "Social Security numbers", "Driver's licence and ID numbers", "Home addresses"],
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Social Security numbers",
+            "Driver's licence and ID numbers",
+            "Home addresses"
+          ],
           "description": "An attacker got into T-Mobile's systems and took customer data in August 2021. T-Mobile offered two years of free identity protection to people who might be affected. This record covers the 2021 incident only.",
           "source_name": "T-Mobile Newsroom",
-          "source_url": "https://www.t-mobile.com/news/network/additional-information-regarding-2021-cyberattack-investigation"
+          "source_url": "https://www.t-mobile.com/news/network/additional-information-regarding-2021-cyberattack-investigation",
+          "statement": {
+            "title": "T-Mobile Cybersecurity Incident Update",
+            "url": "https://www.t-mobile.com/news/network/cybersecurity-incident-update-august-2021"
+          }
         }
       ]
     },
     {
       "name": "Medibank",
-      "aliases": ["Medibank Private", "ahm"],
+      "aliases": [
+        "Medibank Private",
+        "ahm"
+      ],
       "website": "medibank.com.au",
       "breaches": [
         {
@@ -182,16 +308,30 @@
           "date": "2022-10",
           "status": "confirmed",
           "affected": "9.7 million people (according to the Australian regulator)",
-          "categories": ["Names", "Dates of birth", "Medicare numbers", "Passport numbers", "Health claims information", "Home addresses", "Phone numbers"],
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Medicare numbers",
+            "Passport numbers",
+            "Health claims information",
+            "Home addresses",
+            "Phone numbers"
+          ],
           "description": "An attacker took about 520 gigabytes of data from Australian health insurer Medibank in October 2022. In 2024 the Australian Information Commissioner started civil penalty proceedings, alleging Medibank did not take reasonable steps to protect the data. The court case was still going on when this record was written.",
           "source_name": "Office of the Australian Information Commissioner",
-          "source_url": "https://www.oaic.gov.au/news/media-centre/oaic-takes-civil-penalty-action-against-medibank"
+          "source_url": "https://www.oaic.gov.au/news/media-centre/oaic-takes-civil-penalty-action-against-medibank",
+          "statement": {
+            "title": "Updating our customers about the cybercrime",
+            "url": "https://www.medibank.com.au/livebetter/newsroom/post/updating-our-customers-about-the-cybercrime"
+          }
         }
       ]
     },
     {
       "name": "Optus",
-      "aliases": ["Singtel Optus"],
+      "aliases": [
+        "Singtel Optus"
+      ],
       "website": "optus.com.au",
       "breaches": [
         {
@@ -199,16 +339,29 @@
           "date": "2022-09",
           "status": "confirmed",
           "affected": "About 9.5 million people (according to the Australian regulator)",
-          "categories": ["Names", "Dates of birth", "Phone numbers", "Email addresses", "Home addresses", "Passport and driver's licence numbers"],
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Phone numbers",
+            "Email addresses",
+            "Home addresses",
+            "Passport and driver's licence numbers"
+          ],
           "description": "Australian telecom company Optus announced the breach on 22 September 2022. The Australian Information Commissioner has started civil penalty proceedings, alleging Optus did not take reasonable steps to protect personal information. The court case was still going on when this record was written.",
           "source_name": "Office of the Australian Information Commissioner",
-          "source_url": "https://www.oaic.gov.au/news/media-centre/australian-information-commissioner-takes-civil-penalty-action-against-optus"
+          "source_url": "https://www.oaic.gov.au/news/media-centre/australian-information-commissioner-takes-civil-penalty-action-against-optus",
+          "statement": {
+            "title": "Optus notifies customers of cyberattack compromising customer information",
+            "url": "https://www.optus.com.au/about/media-centre/media-releases/2022/09/optus-notifies-customers-of-cyberattack"
+          }
         }
       ]
     },
     {
       "name": "Booking.com",
-      "aliases": ["Booking"],
+      "aliases": [
+        "Booking"
+      ],
       "website": "booking.com",
       "breaches": [
         {
@@ -216,10 +369,17 @@
           "date": "2018-12",
           "status": "confirmed",
           "affected": "More than 4,000 customers",
-          "categories": ["Names", "Home addresses", "Phone numbers", "Booking details", "Payment card details (some)"],
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Phone numbers",
+            "Booking details",
+            "Payment card details (some)"
+          ],
           "description": "Criminals tricked staff at hotels in the United Arab Emirates into giving up their Booking.com login details and used them to see customer bookings. The Dutch Data Protection Authority fined Booking.com €475,000 in 2021 because it reported the breach 22 days too late.",
           "source_name": "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
-          "source_url": "https://autoriteitpersoonsgegevens.nl/en/current/bookingcom-fined-for-delay-in-reporting-data-breach"
+          "source_url": "https://autoriteitpersoonsgegevens.nl/en/current/bookingcom-fined-for-delay-in-reporting-data-breach",
+          "statement": null
         }
       ]
     },
@@ -233,16 +393,25 @@
           "date": "2012-06",
           "status": "confirmed",
           "affected": "More than 100 million members",
-          "categories": ["Email addresses", "Hashed passwords"],
+          "categories": [
+            "Email addresses",
+            "Hashed passwords"
+          ],
           "description": "In 2012 about 6.5 million hashed LinkedIn passwords were posted online. In 2016 a much larger set of email and password combinations from the same 2012 theft was released, and LinkedIn reset the passwords of affected accounts.",
           "source_name": "LinkedIn",
-          "source_url": "https://blog.linkedin.com/2016/05/18/protecting-our-members"
+          "source_url": "https://blog.linkedin.com/2016/05/18/protecting-our-members",
+          "statement": {
+            "title": "Protecting Our Members",
+            "url": "https://blog.linkedin.com/2016/05/18/protecting-our-members"
+          }
         }
       ]
     },
     {
       "name": "Adobe",
-      "aliases": ["Adobe Systems"],
+      "aliases": [
+        "Adobe Systems"
+      ],
       "website": "adobe.com",
       "breaches": [
         {
@@ -250,10 +419,21 @@
           "date": "2013-09",
           "status": "confirmed",
           "affected": "About 2.9 million customers' payment records, plus customer IDs and encrypted passwords",
-          "categories": ["Names", "Customer IDs", "Encrypted passwords", "Encrypted payment card numbers", "Card expiry dates", "Order details"],
+          "categories": [
+            "Names",
+            "Customer IDs",
+            "Encrypted passwords",
+            "Encrypted payment card numbers",
+            "Card expiry dates",
+            "Order details"
+          ],
           "description": "Adobe announced in October 2013 that attackers had taken customer IDs and encrypted passwords, plus payment information on about 2.9 million customers. Adobe said it did not believe decrypted card numbers were taken. Source code for several Adobe products was also accessed.",
           "source_name": "Adobe",
-          "source_url": "https://blog.adobe.com/en/publish/2013/10/03/important-customer-security-announcement"
+          "source_url": "https://blog.adobe.com/en/publish/2013/10/03/important-customer-security-announcement",
+          "statement": {
+            "title": "Important Customer Security Announcement",
+            "url": "https://blog.adobe.com/en/publish/2013/10/03/important-customer-security-announcement"
+          }
         }
       ]
     }

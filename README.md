@@ -27,13 +27,16 @@ Edit `data/breaches.json`. Every breach needs:
   "categories": ["Names", "Email addresses"],
   "description": "Two or three plain sentences. State allegations as allegations.",
   "source_name": "Who published the source",
-  "source_url": "https://..."
+  "source_url": "https://...",
+  "statement": { "title": "Title of the company's own statement", "url": "https://..." }
 }
 ```
 
 - `date` can be `YYYY` or `YYYY-MM`.
 - `status` is `confirmed` (the company or a regulator says it happened) or `unverified_report`.
 - Use a regulator or the company itself as the source whenever possible. Never link to leaked data.
+- `statement` is the company's own public statement about the breach, or `null` if there isn't one.
+- Risk colours for exposed data are set automatically from the category name (see `HIGH` and `MED` in `assets/search.js`).
 - Update `"updated"` at the top of the file.
 
 ## Changing an inner page

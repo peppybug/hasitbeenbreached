@@ -31,6 +31,13 @@
       .map(function (r) { return r.c; });
   }
 
+  /* How risky each type of exposed data is for the people affected. Not colour alone: tags are sorted, labelled and explained in a legend. */
+  var HIGH = /social security|insurance number|passport|licen[cs]e|id number|payment card|card number|security code|cvv|bank account|password|security question|health|medicare|medical|genetic|ancestry|ethnicity|income|credit/i;
+  var MED = /date of birth|dates of birth|home address|shipping address|phone|location|family tree|expiry|booking|stay|order/i;
+  function sev(cat) { return HIGH.test(cat) ? 'high' : MED.test(cat) ? 'med' : 'low'; }
+  var SEV_LABEL = { high: 'High risk', med: 'Medium risk', low: 'Lower risk' };
+  var SEV_ORDER = { high: 0, med: 1, low: 2 };
+
   function entry(b) {
     var e = el('div', 'entry'), unv = b.status !== 'confirmed';
     var top = el('div', 'entry-top');
@@ -42,18 +49,38 @@
     row('When', fmt(b.date));
     if (b.affected) row('Affected', b.affected);
     row('Source', b.source_name || 'Public source');
-    var ul = el('ul', 'tags'); b.categories.forEach(function (x) { ul.appendChild(el('li', 0, x)); });
+    var ul = el('ul', 'tags sev-tags');
+    b.categories.slice().sort(function (x, y) { return SEV_ORDER[sev(x)] - SEV_ORDER[sev(y)]; }).forEach(function (x) {
+      var s = sev(x), li = el('li', 'sev-' + s); li.title = SEV_LABEL[s];
+      li.appendChild(el('span', 'sr', SEV_LABEL[s] + ': ')); li.appendChild(document.createTextNode(x)); ul.appendChild(li);
+    });
+    var worst = b.categories.reduce(function (w, x) { var s = sev(x); return SEV_ORDER[s] < SEV_ORDER[w] ? s : w; }, 'low');
+    top.appendChild(el('span', 'risk risk-' + worst, worst === 'high' ? 'High-risk data exposed' : worst === 'med' ? 'Medium-risk data exposed' : 'Lower-risk data exposed'));
     row('Exposed', ul, true);
     e.appendChild(dl);
     if (unv) e.appendChild(el('p', 'caveat', 'This comes from a report that has not been confirmed. Treat it with care.'));
     e.appendChild(el('p', 'plain', b.description));
-    var s = el('p', 'src', 'Source: ');
-    if (/^https:\/\//.test(b.source_url)) { var l = el('a', 0, b.source_name || b.source_url); l.href = b.source_url; l.target = '_blank'; l.rel = 'noopener noreferrer'; s.appendChild(l); }
-    e.appendChild(s);
+    var leg = el('p', 'legend'); leg.setAttribute('aria-hidden', 'true');
+    ['high', 'med', 'low'].forEach(function (k) { leg.appendChild(el('span', 'lg-' + k, SEV_LABEL[k])); });
+    e.appendChild(leg);
+    function link(text, url) { var l = el('a', 0, text); l.href = url; l.target = '_blank'; l.rel = 'noopener noreferrer'; return l; }
+    var st = b.statement, same = st && st.url === b.source_url;
+    var box = el('div', 'statement' + (st ? '' : ' none'));
+    if (st) {
+      box.appendChild(el('p', 'st-label', 'Official statement from ' + (CUR || 'the company')));
+      var sp = el('p', 'st-link'); sp.appendChild(link(st.title, st.url)); box.appendChild(sp);
+    } else {
+      box.appendChild(el('p', 'st-label', 'No official company statement found'));
+      box.appendChild(el('p', 'st-none', 'We couldn’t find a public statement from the company about this breach. The record is based on the source below.'));
+    }
+    e.appendChild(box);
+    if (!same && /^https:\/\//.test(b.source_url)) { var s = el('p', 'src', 'Source: '); s.appendChild(link(b.source_name || b.source_url, b.source_url)); e.appendChild(s); }
     return e;
   }
 
+  var CUR = '';
   function card(c, banner) {
+    CUR = c.name;
     var a = el('article', 'result');
     a.setAttribute('aria-label', 'Breach history for ' + c.name);
     var h = el('div', 'result-head');
