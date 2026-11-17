@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Has it been Breached? – Check a company’s breach history</title>
+<meta name="description" content="Search a company’s publicly documented breach history before you share your data. Free, with a source link on every record.">
+<meta name="theme-color" content="#F0F0F0">
+<meta property="og:site_name" content="Has it been Breached?">
+<meta property="og:title" content="Has it been Breached? – Check a company’s breach history">
+<meta property="og:description" content="Before you trust them with your data, check their history.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Mono:wght@500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/home.css">
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<header class="site"><div class="wrap"><div class="bar">
+  <a class="logo" href="./" aria-label="Has it been Breached? home"><i aria-hidden="true">?</i><span>Has it been Breached?</span></a>
+  <nav aria-label="Main">
+    <ul>
+      <li class="hide-sm"><a href="#how">How it works</a></li>
+      <li><a href="#all">Browse</a></li>
+      <li class="hide-sm"><a href="#faq">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn sm" href="#search">Search</a></li>
+    </ul>
+  </nav>
+</div></div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="hero-grid">
+    <div>
+      <p class="kicker">Check before you share</p>
+      <h1><span>Has it been</span> <mark>Breached?</mark></h1>
+      <p class="tagline">Before you trust them with your data, <b>check their history.</b></p>
+      <p class="lead">Search a company to see the publicly documented breaches on record, when they happened, and what kind of personal information was exposed. In plain language.</p>
+      <form class="search" id="search" role="search" aria-label="Company search">
+        <label for="q" class="sr">Company name or website</label>
+        <input id="q" name="q" type="search" placeholder="Type a company name or website" autocomplete="off" minlength="2" maxlength="100" required>
+        <button class="btn" type="submit">Check history</button>
+      </form>
+      <p class="try">Try: <button type="button" data-try="Booking.com">Booking.com</button><button type="button" data-try="LinkedIn">LinkedIn</button><button type="button" data-try="Marriott">Marriott</button></p>
+      <ul class="facts-row">
+        <li>Free to search</li>
+        <li>A source link on every record</li>
+        <li>No account needed</li>
+      </ul>
+      <p class="privacy-note">Your search stays in your browser. It isn’t sent to us or stored. <a href="privacy.html">Privacy policy</a>.</p>
+    </div>
+
+    <div class="sample-wrap">
+      <span class="guide" aria-hidden="true">?</span>
+      <div id="sample" aria-live="polite">
+        <p id="searched" hidden></p>
+        <div id="results"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ticker" id="ticker" role="region" aria-label="Types of information a breach record can list">
+  <div class="ticker-top">
+    <p class="kicker">Types of information a record can list</p>
+    <button class="btn sm ghost" id="pause" type="button" aria-pressed="false">Pause motion</button>
+  </div>
+  <div class="ticker-viewport"><div class="ticker-track"><ul><li>Email addresses</li><li>Hashed passwords</li><li>Phone numbers</li><li>Names</li><li>Dates of birth</li><li>Home addresses</li><li>Payment card details</li><li>Passport numbers</li><li>Health information</li><li>Security questions</li></ul><ul aria-hidden="true"><li>Email addresses</li><li>Hashed passwords</li><li>Phone numbers</li><li>Names</li><li>Dates of birth</li><li>Home addresses</li><li>Payment card details</li><li>Passport numbers</li><li>Health information</li><li>Security questions</li></ul></div></div>
+</div>
+
+<section id="how" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="kicker">How it works</p>
+      <h2>Three steps. No jargon.</h2>
+      <p>Search, read, then decide what you’re comfortable sharing.</p>
+    </div>
+    <div class="bento">
+      <article class="tile s2 rv"><span class="big" aria-hidden="true">1</span><p class="n">01 / Search</p><h3>Search a company</h3><p>Type the name of a business or its website into the search box.</p></article>
+      <article class="tile s2 rv"><span class="big" aria-hidden="true">2</span><p class="n">02 / Read</p><h3>See what’s on record</h3><p>Find out whether a breach has been recorded, when it happened and how many people it affected.</p></article>
+      <article class="tile s2 rv"><span class="big" aria-hidden="true">3</span><p class="n">03 / Decide</p><h3>Choose what to share</h3><p>Read which types of information were exposed, in everyday words, then decide what to give them.</p></article>
+      <article class="tile s3 pink rv"><p class="n">Honest limits</p><h3>Not every company. Not every breach.</h3>
+        <p>The database only holds records we have added by hand, and it is still small. No result never means a company has had no breach. <a href="sources.html">How records are sourced and corrected</a>.</p></article>
+      <article class="tile s3 rv"><p class="n">Sources</p><h3>Every record shows where it came from</h3>
+        <div class="chips"><span class="chip">Confirmed</span><span class="chip u">Unverified report</span></div>
+        <p>Each record links to the public source it is based on, usually a data protection regulator or the company itself, so you can read it yourself.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="all">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="kicker">The database</p>
+      <h2>Everything on record.</h2>
+      <p>Every company currently in the database. Pick one to see its records. <span class="updated" id="count"></span></p>
+    </div>
+    <ul class="browse" id="browse" aria-label="Companies in the database"></ul>
+    <p class="muted" style="margin-top:22px">Missing a company? <a href="contact.html">Suggest one</a> with a link to a public source.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="kicker">Questions</p>
+      <h2>Straight answers.</h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>Does this cover every company and every breach?</summary><p>No. The database only holds the records that have been added by hand, and it is still small. Finding nothing doesn’t mean a company has never had a breach.</p></details>
+      <details><summary>Where do records come from?</summary><p>From public sources, mostly decisions and announcements by data protection regulators and statements from the companies themselves. Every record links to its source. Read more on the <a href="sources.html">data sources page</a>.</p></details>
+      <details><summary>What’s the difference between confirmed and unverified?</summary><p>Confirmed means the linked source, such as a regulator or the company, says the incident happened. An unverified report has been reported but not confirmed by a source we could point to, so treat it with care.</p></details>
+      <details><summary>Does a breach mean I shouldn’t use a company?</summary><p>Not necessarily. A record is about the past and says nothing certain about how a company protects data today. It’s one more thing to weigh when you decide what to share.</p></details>
+      <details><summary>Can I check whether my own email was in a breach?</summary><p>Not here. This site looks up companies, not people, and never asks for your personal details.</p></details>
+      <details><summary>How do I report a mistake?</summary><p>Use the <a href="contact.html">contact page</a>. Include what looks wrong and a public source if you have one.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="statement rv">
+      <h2><span>Check first.</span> <span><em>Share</em> second.</span></h2>
+      <p><b>Look up</b> a company before you hand over your details. Searching is free.</p>
+      <a class="btn" href="#top" id="cta-top">Search a company</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <div class="foot">
+    <div><a class="logo" href="./" aria-label="Has it been Breached? home"><i aria-hidden="true">?</i><span>Has it been Breached?</span></a><p class="tag">Before you trust them with your data, check their history.</p></div>
+    <div><h2>Product</h2><ul><li><a href="#how">How it works</a></li><li><a href="#all">Browse companies</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+    <div><h2>Company</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="sources.html">Data sources</a></li></ul></div>
+    <div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
+  </div>
+  <p class="mark" aria-hidden="true">Has it been Breached?</p>
+  <p class="fine">© 2026 Has it been Breached? Records are based on public sources and may be incomplete or out of date. Not legal, financial or security advice.</p>
+</div></footer>
+
+<script src="assets/search.js"></script>
+<script src="assets/ui.js"></script>
+<script>document.getElementById('cta-top').addEventListener('click',function(){setTimeout(function(){document.getElementById('q').focus()},300)});</script>
+</body>
+</html>
