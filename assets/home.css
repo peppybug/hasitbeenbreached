@@ -238,3 +238,16 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 .okind{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .otext{font-size:.95rem}
 @media(max-width:480px){.track-grid{grid-template-columns:1fr 1fr}.lagtag{margin:4px 0 0;display:table}}
+
+/* ---------- desktop: company list sticks while the record scrolls ---------- */
+@media(min-width:821px){
+  .win-body{align-items:start}
+  .side{position:sticky;top:64px;height:calc(100vh - 64px);max-height:none;border-bottom:0}
+  .side .browse{flex:1;min-height:0;max-height:none;overflow-y:auto;overscroll-behavior:contain;
+    -webkit-mask-image:linear-gradient(180deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(180deg,#000 calc(100% - 28px),transparent)}
+  .win-body::before{content:"";grid-column:1;grid-row:1;align-self:stretch;background:#FAFAFB;border-right:1px solid var(--line)}
+  .side{grid-column:1;grid-row:1}
+  .main-pane{grid-column:2;grid-row:1}
+}
+/* overflow:hidden on the window would stop the sticky sidebar from working; clip rounds the corners the same way */
+.window{overflow:clip}
