@@ -33,16 +33,18 @@
 
   function entry(b) {
     var e = el('div', 'entry'), unv = b.status !== 'confirmed';
-    e.appendChild(el('span', 'status' + (unv ? ' unv' : ''), unv ? 'Unverified report' : 'Confirmed'));
-    e.appendChild(el('h4', 0, b.title));
+    var top = el('div', 'entry-top');
+    top.appendChild(el('h4', 0, b.title));
+    top.appendChild(el('span', 'status' + (unv ? ' unv' : ''), unv ? 'Unverified report' : 'Confirmed'));
+    e.appendChild(top);
     var dl = el('dl', 'facts');
-    function row(label, node) { var d = el('div'); d.appendChild(el('dt', 0, label)); var dd = el('dd'); if (typeof node === 'string') dd.textContent = node; else dd.appendChild(node); d.appendChild(dd); dl.appendChild(d); }
-    row('When it happened', fmt(b.date));
-    if (b.affected) row('How many people', b.affected);
+    function row(label, node) { dl.appendChild(el('dt', 0, label)); var dd = el('dd'); if (typeof node === 'string') dd.textContent = node; else dd.appendChild(node); dl.appendChild(dd); }
+    row('When', fmt(b.date));
+    if (b.affected) row('Affected', b.affected);
     var ul = el('ul', 'tags'); b.categories.forEach(function (x) { ul.appendChild(el('li', 0, x)); });
-    row('What was exposed', ul);
+    row('Exposed', ul);
     e.appendChild(dl);
-    if (unv) e.appendChild(el('p', 'plain', 'This comes from a report that has not been confirmed. Treat it with care.'));
+    if (unv) e.appendChild(el('p', 'caveat', 'This comes from a report that has not been confirmed. Treat it with care.'));
     e.appendChild(el('p', 'plain', b.description));
     var s = el('p', 'src', 'Source: ');
     if (/^https:\/\//.test(b.source_url)) { var l = el('a', 0, b.source_name || b.source_url); l.href = b.source_url; l.target = '_blank'; l.rel = 'noopener noreferrer'; s.appendChild(l); }
@@ -53,13 +55,15 @@
   function card(c, banner) {
     var a = el('article', 'result');
     a.setAttribute('aria-label', 'Breach history for ' + c.name);
-    a.appendChild(el('div', 'banner', banner || 'Based on public sources. Not a complete record.'));
+    var h = el('div', 'result-head');
+    if (banner) h.appendChild(el('p', 'result-label', banner));
+    h.appendChild(el('h3', 0, c.name));
+    if (c.aliases.length) h.appendChild(el('p', 'aka', 'Also known as ' + c.aliases.join(', ')));
+    a.appendChild(h);
     var b = el('div', 'result-body');
-    b.appendChild(el('h3', 0, c.name));
-    if (c.aliases.length) b.appendChild(el('p', 'aka', 'Also known as: ' + c.aliases.join(', ')));
     if (!c.breaches.length) b.appendChild(el('p', 'plain', 'No breach records for this company in our database. That does not mean it has never had one.'));
     c.breaches.forEach(function (x) { b.appendChild(entry(x)); });
-    var fix = el('p', 'src'); var fl = el('a', 0, 'Report a mistake in this record'); fl.href = 'contact.html'; fix.appendChild(fl); b.appendChild(fix);
+    var fix = el('p', 'fix'); var fl = el('a', 0, 'Report a mistake in this record'); fl.href = 'contact.html'; fix.appendChild(fl); b.appendChild(fix);
     a.appendChild(b);
     return a;
   }
