@@ -38,11 +38,12 @@
     top.appendChild(el('span', 'status' + (unv ? ' unv' : ''), unv ? 'Unverified report' : 'Confirmed'));
     e.appendChild(top);
     var dl = el('dl', 'facts');
-    function row(label, node) { dl.appendChild(el('dt', 0, label)); var dd = el('dd'); if (typeof node === 'string') dd.textContent = node; else dd.appendChild(node); dl.appendChild(dd); }
+    function row(label, node, wide) { var d = el('div', wide ? 'wide' : ''); d.appendChild(el('dt', 0, label)); var dd = el('dd'); if (typeof node === 'string') dd.textContent = node; else dd.appendChild(node); d.appendChild(dd); dl.appendChild(d); }
     row('When', fmt(b.date));
     if (b.affected) row('Affected', b.affected);
+    row('Source', b.source_name || 'Public source');
     var ul = el('ul', 'tags'); b.categories.forEach(function (x) { ul.appendChild(el('li', 0, x)); });
-    row('Exposed', ul);
+    row('Exposed', ul, true);
     e.appendChild(dl);
     if (unv) e.appendChild(el('p', 'caveat', 'This comes from a report that has not been confirmed. Treat it with care.'));
     e.appendChild(el('p', 'plain', b.description));
@@ -68,6 +69,11 @@
     return a;
   }
 
+  function mark(names) {
+    if (!browse) return;
+    browse.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', names.indexOf(b.dataset.name) > -1 ? 'true' : 'false'); });
+  }
+
   function setUrl(term) {
     try { var u = new URL(location.href); if (term) u.searchParams.set('q', term); else u.searchParams.delete('q'); history.replaceState(null, '', u); } catch (e) {}
   }
@@ -77,6 +83,7 @@
       out.replaceChildren();
       var r = find(term);
       setUrl(term);
+      mark(r.map(function (c) { return c.name; }));
       if (!r.length) {
         msg('No matches for “' + term + '”. That doesn’t mean the company has never had a breach. Our database is small and doesn’t cover every company.');
       } else {
@@ -90,23 +97,24 @@
   ready = fetch('data/breaches.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error('load'); return r.json(); }).then(function (d) {
     DB = d;
     DB.companies.sort(function (a, b) { return a.name.localeCompare(b.name); });
-    if (count) count.textContent = DB.companies.length + ' companies · last updated ' + d.updated;
+    if (count) count.textContent = DB.companies.length + ' companies · updated ' + d.updated;
     if (browse) DB.companies.forEach(function (c) {
-      var li = el('li'), btn = el('button'); btn.type = 'button';
+      var li = el('li'), btn = el('button'); btn.type = 'button'; btn.dataset.name = c.name; btn.setAttribute('aria-pressed', 'false');
       btn.appendChild(el('b', 0, c.name));
       btn.appendChild(el('small', 0, c.breaches.length + (c.breaches.length === 1 ? ' record' : ' records') + ' · ' + c.website));
-      btn.addEventListener('click', function () { q.value = c.name; run(c.name, true); });
+      btn.addEventListener('click', function () { q.value = c.name; run(c.name, window.innerWidth < 820); });
       li.appendChild(btn); browse.appendChild(li);
     });
   });
 
-  form.addEventListener('submit', function (e) { e.preventDefault(); var t = q.value.trim(); if (t.length > 1) run(t, window.innerWidth < 900); });
-  document.querySelectorAll('[data-try]').forEach(function (b) { b.addEventListener('click', function () { q.value = b.dataset.try; run(b.dataset.try, window.innerWidth < 900); }); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); var t = q.value.trim(); if (t.length > 1) run(t, true); });
+  document.querySelectorAll('[data-try]').forEach(function (b) { b.addEventListener('click', function () { q.value = b.dataset.try; run(b.dataset.try, true); }); });
 
   var start = new URLSearchParams(location.search).get('q');
   if (start) { q.value = start; run(start); }
   else ready.then(function () {
     var ex = DB.companies.filter(function (c) { return c.name === 'British Airways'; })[0] || DB.companies[0];
     out.appendChild(card(ex, 'Example from the database'));
+    mark([ex.name]);
   }).catch(function () { msg('The database couldn’t be loaded. Please refresh the page and try again.'); });
 })();

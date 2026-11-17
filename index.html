@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=3">
-<link rel="stylesheet" href="assets/home.css?v=3">
+<link rel="stylesheet" href="assets/home.css?v=5">
 </head>
 <body>
 <a class="skip" href="#top">Skip to content</a>
@@ -32,63 +32,92 @@
 
 <main id="top" style="padding:0">
 <div class="wrap hero">
-  <div class="hero-grid">
-    <div>
-      <h1>Before you share your data, <em>check their history.</em></h1>
-      <p class="lead">Search a company to see the data breaches on public record: when they happened, how many people were affected, and what was exposed. In plain language.</p>
-      <form class="search" id="search" role="search" aria-label="Company search">
-        <label for="q" class="sr">Company name or website</label>
-        <input id="q" name="q" type="search" placeholder="Company name or website" autocomplete="off" minlength="2" maxlength="100" required>
-        <button class="btn" type="submit">Search</button>
-      </form>
-      <p class="try">Try <button type="button" data-try="Booking.com">Booking.com</button><button type="button" data-try="LinkedIn">LinkedIn</button><button type="button" data-try="Marriott">Marriott</button></p>
-      <ul class="assure">
-        <li>Free, no account</li>
-        <li>Every record links to its source</li>
-        <li>Your search stays in your browser</li>
-      </ul>
-    </div>
+  <p class="pill-note">Free company breach lookup · no account needed</p>
+  <h1><span>Before you share,</span> <span class="two">check their history.</span></h1>
+  <p class="lead">Search a company to see the data breaches on public record: when they happened, how many people were affected, and what was exposed. In plain language.</p>
+  <form class="search" id="search" role="search" aria-label="Company search">
+    <label for="q" class="sr">Company name or website</label>
+    <input id="q" name="q" type="search" placeholder="Company name or website" autocomplete="off" minlength="2" maxlength="100" required>
+    <button class="btn" type="submit">Check history</button>
+  </form>
+  <p class="try">Try <button type="button" data-try="Booking.com">Booking.com</button><button type="button" data-try="LinkedIn">LinkedIn</button><button type="button" data-try="Marriott">Marriott</button></p>
+  <p class="sub-note">Your search stays in your browser. Every record links to its source.</p>
+</div>
 
-    <div id="sample" aria-live="polite">
-      <p id="searched" hidden></p>
-      <div id="results"></div>
+<div class="wrap window-wrap" id="all">
+  <div class="window" role="group" aria-label="Breach report">
+    <div class="win-bar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="win-title"><b aria-hidden="true">?</b>Breach report</div>
+      <div class="win-hint">Real records from public sources</div>
+    </div>
+    <div class="win-body">
+      <div class="side">
+        <h2>Companies on record</h2>
+        <ul class="browse" id="browse" aria-label="Companies in the database"></ul>
+        <p class="count" id="count"></p>
+      </div>
+      <div class="main-pane" id="sample" aria-live="polite">
+        <p id="searched" hidden></p>
+        <div id="results"></div>
+      </div>
     </div>
   </div>
+  <p class="muted" style="text-align:center;margin-top:20px">Missing a company? <a href="contact.html">Suggest one</a> with a link to a public source.</p>
 </div>
 
 <section id="how">
   <div class="wrap">
     <div class="sec-head">
-      <h2>How it works</h2>
+      <h2>Three steps. <span>No jargon.</span></h2>
       <p>Search, read, then decide what you’re comfortable sharing.</p>
     </div>
-    <ol class="steps">
-      <li><h3>Search a company</h3><p>Type the name of a business or its website.</p></li>
-      <li><h3>See what’s on record</h3><p>When each breach happened, how many people it affected, and the source it comes from.</p></li>
-      <li><h3>Decide what to share</h3><p>Read which types of information were exposed, then choose what to give them.</p></li>
-    </ol>
+    <div class="tour">
+      <div class="tour-visual" aria-hidden="true">
+        <div class="mini">
+          <div class="part m-search" data-part="1"><span>British Airways</span><em>Check history</em></div>
+          <div class="part" data-part="2">
+            <div class="m-title">2018 website payment data theft</div>
+            <div class="m-row"><span>When <b>August 2018</b></span><span>Affected <b>400,000+ people</b></span></div>
+          </div>
+          <div class="part" data-part="3">
+            <ul class="tags" style="margin:0"><li>Names</li><li>Home addresses</li><li>Payment card details</li><li>Card security codes</li></ul>
+            <p class="m-src" style="margin:10px 0 0">Source: <a href="#">UK Information Commissioner’s Office</a></p>
+          </div>
+        </div>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="step on" data-part="1">
+          <p class="n">01 / Search</p>
+          <h3>Search a company</h3>
+          <p>Type the name of a business or its website. Searches run in your browser and are never sent anywhere.</p>
+          <ul><li>Names, aliases and websites</li><li>No account</li></ul>
+        </li>
+        <li class="step" data-part="2">
+          <p class="n">02 / Read</p>
+          <h3>See what’s on record</h3>
+          <p>When each breach happened, how many people it affected, and a short summary in everyday words.</p>
+          <ul><li>Confirmed or unverified</li><li>Plain language</li></ul>
+        </li>
+        <li class="step" data-part="3">
+          <p class="n">03 / Decide</p>
+          <h3>Choose what to share</h3>
+          <p>See which types of information were exposed, follow the link to the source, then decide what to give them.</p>
+          <ul><li>Source on every record</li><li>Report a mistake</li></ul>
+        </li>
+      </ol>
+    </div>
     <div class="limits">
       <div><h3>Not every company, not every breach</h3><p>The database only holds records we have added by hand, and it is still small. No result never means a company has had no breach. <a href="sources.html">How records are sourced</a>.</p></div>
-      <div><h3>Every record shows where it came from</h3><p>Usually a data protection regulator or the company itself. Records are marked confirmed or unverified, so you can weigh them yourself.</p></div>
+      <div><h3>Every record shows where it came from</h3><p>Usually a data protection regulator or the company itself, so you can read the source yourself.</p></div>
     </div>
-  </div>
-</section>
-
-<section id="all">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Companies on record</h2>
-      <p>Everything currently in the database. <span class="updated" id="count"></span></p>
-    </div>
-    <ul class="browse" id="browse" aria-label="Companies in the database"></ul>
-    <p class="muted" style="margin-top:24px">Missing a company? <a href="contact.html">Suggest one</a> with a link to a public source.</p>
   </div>
 </section>
 
 <section id="faq">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Questions</h2>
+      <h2>Straight answers.</h2>
     </div>
     <div class="faq">
       <details><summary>Does this cover every company and every breach?</summary><p>No. The database only holds the records that have been added by hand, and it is still small. Finding nothing doesn’t mean a company has never had a breach.</p></details>
@@ -103,7 +132,7 @@
 
 <section class="closing">
   <div class="wrap">
-    <h2>Check first. Share second.</h2>
+    <h2>Check first. <span>Share second.</span></h2>
     <p>Look up a company before you hand over your details.</p>
     <a class="btn" href="#top" id="cta-top">Search a company</a>
   </div>
@@ -120,7 +149,15 @@
   <p class="fine">© 2026 Has it been Breached? Records are based on public sources and may be incomplete or out of date. Not legal, financial or security advice.</p>
 </div></footer>
 
-<script src="assets/search.js?v=3"></script>
+<script src="assets/search.js?v=5"></script>
 <script>document.getElementById('cta-top').addEventListener('click',function(){setTimeout(function(){document.getElementById('q').focus()},300)});</script>
+<script>
+/* Scroll-driven steps: highlight the matching part of the illustration (wide screens only). */
+(function(){var steps=document.querySelectorAll('.step'),parts=document.querySelectorAll('.mini .part');
+function show(n){steps.forEach(function(s){s.classList.toggle('on',s.dataset.part===n)});parts.forEach(function(p){p.classList.toggle('on',p.dataset.part===n)})}
+show('1');if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){if(window.innerWidth<=900)return;es.forEach(function(e){if(e.isIntersecting)show(e.target.dataset.part)})},{rootMargin:'-45% 0px -45% 0px'});
+steps.forEach(function(s){io.observe(s)})})();
+</script>
 </body>
 </html>
