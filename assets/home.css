@@ -251,3 +251,10 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 }
 /* overflow:hidden on the window would stop the sticky sidebar from working; clip rounds the corners the same way */
 .window{overflow:clip}
+
+/* ---------- Ko-fi support line ---------- */
+.closing .support{margin:26px auto 0;font-size:.98rem;color:var(--muted);max-width:34em}
+.closing .support span{font-size:.88rem}
+.kofi{display:inline;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--pink);padding-bottom:1px;margin-left:4px}
+.kofi:hover{color:var(--accent-dark);border-bottom-color:var(--accent)}
+.kofi .cup{width:18px;height:18px;color:var(--pink);vertical-align:-3px;margin-right:5px}

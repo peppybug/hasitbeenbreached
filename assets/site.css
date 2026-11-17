@@ -80,3 +80,7 @@ footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size
 @media(max-width:720px){.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+/* Ko-fi button on inner pages */
+.kofi-btn{background:var(--pink);color:var(--ink)}
+.kofi-btn:hover:not(:disabled){background:#FF99C4;color:var(--ink)}
+.kofi-btn .cup{width:20px;height:20px}
