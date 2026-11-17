@@ -133,3 +133,47 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 .closing h2 span{display:block;color:var(--accent)}
 .closing p{color:var(--muted);font-size:1.1rem;margin:0 0 26px}
 .closing .btn{border-radius:999px;padding:0 28px;min-height:52px}
+
+/* ---------- motion ----------
+   Everything here only runs when the visitor hasn't asked for reduced motion,
+   and reveal effects only apply once JavaScript is running, so content is never hidden without it. */
+@media (prefers-reduced-motion: no-preference){
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes pop{from{opacity:0;transform:translateY(28px) scale(.985)}to{opacity:1;transform:none}}
+  @keyframes swap{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+
+  /* page load: hero pieces arrive one after another, then the window */
+  .js .hero>*{opacity:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+  .js .hero>:nth-child(1){animation-delay:.05s}
+  .js .hero>:nth-child(2){animation-delay:.15s}
+  .js .hero>:nth-child(3){animation-delay:.3s}
+  .js .hero>:nth-child(4){animation-delay:.42s}
+  .js .hero>:nth-child(5){animation-delay:.52s}
+  .js .hero>:nth-child(6){animation-delay:.6s}
+  .js .window{opacity:0;animation:pop .9s cubic-bezier(.2,.7,.2,1) .7s forwards}
+
+  /* scroll reveal: sections fade up as they come into view */
+  .js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}
+
+  /* results slide in whenever you pick or search a company */
+  .main-pane .result{animation:swap .45s cubic-bezier(.2,.7,.2,1)}
+  .main-pane .result+.result{animation-delay:.08s;animation-fill-mode:both}
+  #searched:not([hidden]){animation:rise .35s ease}
+  .browse button{transition:background .2s,transform .2s}
+  .browse button:hover{transform:translateX(3px)}
+
+  /* steps: the active step slides in slightly, the card parts ease between states */
+  .step{transition:opacity .45s ease,transform .45s cubic-bezier(.2,.7,.2,1)}
+  @media(min-width:901px){.step{transform:translateX(10px)}.step.on{transform:none}}
+  .mini .part{transition:opacity .45s ease,outline-color .45s ease,background .45s ease,transform .45s cubic-bezier(.2,.7,.2,1)}
+  .mini .part.on{transform:scale(1.02)}
+
+  /* buttons and FAQ */
+  .btn{transition:background .2s,transform .2s}
+  .btn:active:not(:disabled){transform:scale(.97)}
+  .faq details[open] p{animation:rise .35s ease}
+  .faq summary::after{transition:transform .25s ease}
+  .faq details[open] summary::after{transform:rotate(180deg)}
+}
