@@ -28,7 +28,9 @@ Edit `data/breaches.json`. Every breach needs:
   "description": "Two or three plain sentences. State allegations as allegations.",
   "source_name": "Who published the source",
   "source_url": "https://...",
-  "statement": { "title": "Title of the company's own statement", "url": "https://..." }
+  "statement": { "title": "Title of the company's own statement", "url": "https://..." },
+  "disclosed": "2021-05",
+  "outcomes": [ { "kind": "fine", "text": "Fined €1 million by the Dutch Data Protection Authority", "year": 2022 } ]
 }
 ```
 
@@ -37,6 +39,8 @@ Edit `data/breaches.json`. Every breach needs:
 - Use a regulator or the company itself as the source whenever possible. Never link to leaked data.
 - `statement` is the company's own public statement about the breach, or `null` if there isn't one.
 - Risk colours for exposed data are set automatically from the category name (see `HIGH` and `MED` in `assets/search.js`).
+- `disclosed` is when the company first made the breach known. Add `"timing_unclear": true` if nobody knows when the breach really happened, so no delay is shown.
+- `outcomes` lists what regulators or courts did: `kind` is `fine`, `settlement`, `court`, `investigation` or `order`. Use `[]` if nothing is known.
 - Update `"updated"` at the top of the file.
 
 ## Changing an inner page

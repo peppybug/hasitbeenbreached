@@ -41,6 +41,62 @@
   var SEV_LABEL = { high: 'High risk', med: 'Medium risk', low: 'Lower risk' };
   var SEV_ORDER = { high: 0, med: 1, low: 2 };
 
+  /* ---------- track record helpers ---------- */
+  function ym(s) { var p = String(s || '').split('-'); return { y: +p[0], m: p[1] ? +p[1] : null }; }
+  /* How long between the breach and the company making it known. Precision follows the data: months when both dates have them, otherwise years. */
+  function lag(b) {
+    if (!b.disclosed || !b.date || b.timing_unclear) return null;
+    var a = ym(b.date), z = ym(b.disclosed), months, text;
+    if (a.m && z.m) {
+      months = (z.y - a.y) * 12 + (z.m - a.m);
+      if (months <= 0) text = 'the same month';
+      else if (months === 1) text = 'about 1 month later';
+      else if (months < 12) text = 'about ' + months + ' months later';
+      else if (months < 18) text = 'over a year later';
+      else text = 'about ' + Math.round(months / 12) + ' years later';
+    } else {
+      var years = z.y - a.y; months = years * 12;
+      text = years <= 0 ? 'the same year' : years === 1 ? 'about a year later' : 'about ' + years + ' years later';
+    }
+    return { months: months, text: text, yearly: !(a.m && z.m), bucket: months <= 2 ? 'fast' : months < 12 ? 'mid' : 'slow' };
+  }
+  function lagShort(l) { return l.months <= 0 ? (l.yearly ? 'Same year' : 'Same month') : l.months < 12 ? (l.months === 1 ? '1 month' : l.months + ' months') : (Math.round(l.months / 12) === 1 ? 'About a year' : 'About ' + Math.round(l.months / 12) + ' years'); }
+  var KIND = { fine: 'fine', settlement: 'settlement', court: 'court case', investigation: 'investigation', order: 'regulator order' };
+
+  function track(c) {
+    var box = el('section', 'track');
+    box.setAttribute('aria-label', 'Track record for ' + c.name);
+    var head = el('div', 'track-head');
+    head.appendChild(el('h4', 0, 'Track record'));
+    head.appendChild(el('p', 'track-note', 'A summary of the records below. Not a security rating.'));
+    box.appendChild(head);
+    var grid = el('div', 'track-grid');
+    function stat(label, value, sub, cls) {
+      var s = el('div', 'tstat' + (cls ? ' ' + cls : '')); s.appendChild(el('p', 'tl', label));
+      s.appendChild(el('p', 'tv', value)); if (sub) s.appendChild(el('p', 'ts', sub)); grid.appendChild(s);
+    }
+    var n = c.breaches.length, years = c.breaches.map(function (b) { return ym(b.date).y; }).sort();
+    stat('Breaches on record', String(n), n ? (years[0] === years[n - 1] ? 'In ' + years[0] : years[0] + ' to ' + years[n - 1]) : '');
+    var lags = c.breaches.map(lag).filter(Boolean).sort(function (x, y) { return y.months - x.months; });
+    if (lags.length) {
+      var worst = lags[0];
+      stat(n > 1 ? 'Longest time to make it known' : 'Time to make it known', lagShort(worst), 'after the breach began', 'lag-' + worst.bucket);
+    } else stat('Time to make it known', 'Unknown', '');
+    var outs = []; c.breaches.forEach(function (b) { (b.outcomes || []).forEach(function (o) { outs.push(o); }); });
+    if (outs.length) {
+      var counts = {}; outs.forEach(function (o) { counts[o.kind] = (counts[o.kind] || 0) + 1; });
+      var parts = Object.keys(counts).map(function (k) { return counts[k] + ' ' + KIND[k] + (counts[k] > 1 ? (k === 'fine' ? 's' : k === 'court' ? 's' : 's') : ''); });
+      stat('Regulator or court action', parts.join(', '), 'See details below', 'has-action');
+    } else stat('Regulator or court action', 'None recorded', 'That we know of');
+    var worstSev = 'low';
+    c.breaches.forEach(function (b) { b.categories.forEach(function (x) { var s = sev(x); if (SEV_ORDER[s] < SEV_ORDER[worstSev]) worstSev = s; }); });
+    stat('Most sensitive data exposed', SEV_LABEL[worstSev], '', 'risk-' + worstSev);
+    var st = c.breaches.filter(function (b) { return b.statement; }).length;
+    stat('Official statements', st + ' of ' + n, st === n ? 'Company spoke publicly every time' : st ? 'Not for every breach' : 'None found', '');
+    box.appendChild(grid);
+    return box;
+  }
+
   function entry(b) {
     var e = el('div', 'entry'), unv = b.status !== 'confirmed';
     var top = el('div', 'entry-top');
@@ -51,6 +107,8 @@
     function row(label, node, wide) { var d = el('div', wide ? 'wide' : ''); d.appendChild(el('dt', 0, label)); var dd = el('dd'); if (typeof node === 'string') dd.textContent = node; else dd.appendChild(node); d.appendChild(dd); dl.appendChild(d); }
     row('When', fmt(b.date));
     if (b.affected) row('Affected', b.affected);
+    var lg = lag(b);
+    if (b.disclosed) { var mp = el('span'); mp.appendChild(document.createTextNode(fmt(b.disclosed))); if (lg) { var tag = el('span', 'lagtag lag-' + lg.bucket, lg.text); mp.appendChild(tag); } row('Made known', mp); }
     row('Source', b.source_name || 'Public source');
     var ul = el('ul', 'tags sev-tags');
     b.categories.slice().sort(function (x, y) { return SEV_ORDER[sev(x)] - SEV_ORDER[sev(y)]; }).forEach(function (x) {
@@ -61,11 +119,22 @@
     top.appendChild(el('span', 'risk risk-' + worst, worst === 'high' ? 'High-risk data exposed' : worst === 'med' ? 'Medium-risk data exposed' : 'Lower-risk data exposed'));
     row('Exposed', ul, true);
     e.appendChild(dl);
-    if (unv) e.appendChild(el('p', 'caveat', 'This comes from a report that has not been confirmed. Treat it with care.'));
-    e.appendChild(el('p', 'plain', b.description));
     var leg = el('p', 'legend'); leg.setAttribute('aria-hidden', 'true');
     ['high', 'med', 'low'].forEach(function (k) { leg.appendChild(el('span', 'lg-' + k, SEV_LABEL[k])); });
     e.appendChild(leg);
+    if (unv) e.appendChild(el('p', 'caveat', 'This comes from a report that has not been confirmed. Treat it with care.'));
+    e.appendChild(el('p', 'plain', b.description));
+    if (b.outcomes && b.outcomes.length) {
+      var ob = el('div', 'outcomes'); ob.appendChild(el('p', 'ol', 'What happened next'));
+      var ul2 = el('ul');
+      b.outcomes.forEach(function (o) {
+        var li = el('li', 'oc-' + o.kind); li.appendChild(el('span', 'okind', KIND[o.kind] + ' · ' + o.year));
+        var tx = el('span', 'otext', o.text); li.appendChild(tx);
+        if (o.url) { var ol = el('a', 0, 'Decision'); ol.href = o.url; ol.target = '_blank'; ol.rel = 'noopener noreferrer'; li.appendChild(document.createTextNode(' ')); li.appendChild(ol); }
+        ul2.appendChild(li);
+      });
+      ob.appendChild(ul2); e.appendChild(ob);
+    }
     function link(text, url) { var l = el('a', 0, text); l.href = url; l.target = '_blank'; l.rel = 'noopener noreferrer'; return l; }
     var st = b.statement, same = st && st.url === b.source_url;
     var box = el('div', 'statement' + (st ? '' : ' none'));
@@ -90,6 +159,7 @@
     if (banner) h.appendChild(el('p', 'result-label', banner));
     h.appendChild(el('h3', 0, c.name));
     if (c.aliases.length) h.appendChild(el('p', 'aka', 'Also known as ' + c.aliases.join(', ')));
+    if (c.breaches.length) h.appendChild(track(c));
     a.appendChild(h);
     var b = el('div', 'result-body');
     if (!c.breaches.length) b.appendChild(el('p', 'plain', 'No breach records for this company in our database. That does not mean it has never had one.'));

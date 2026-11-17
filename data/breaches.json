@@ -29,7 +29,15 @@
           "statement": {
             "title": "Equifax Announces Cybersecurity Incident Involving Consumer Information",
             "url": "https://investor.equifax.com/news-events/press-releases/detail/240/equifax-announces-cybersecurity-incident-involving-consumer"
-          }
+          },
+          "disclosed": "2017-09",
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Agreed to pay at least $575 million to the FTC, CFPB and US states",
+              "year": 2019
+            }
+          ]
         }
       ]
     },
@@ -62,7 +70,15 @@
           "statement": {
             "title": "Marriott Announces Starwood Guest Reservation Database Security Incident",
             "url": "https://news.marriott.com/news/2018/11/30/marriott-announces-starwood-guest-reservation-database-security-incident"
-          }
+          },
+          "disclosed": "2018-11",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined £18.4 million by the UK Information Commissioner’s Office",
+              "year": 2020
+            }
+          ]
         }
       ]
     },
@@ -87,7 +103,15 @@
           "description": "For about two weeks in August and September 2018, attackers copied payment card details that people typed into the British Airways website. In 2020 the UK Information Commissioner's Office fined the airline £20 million.",
           "source_name": "UK Information Commissioner's Office, penalty notice",
           "source_url": "https://ico.org.uk/media2/migrated/2618421/ba-penalty-20201016.pdf",
-          "statement": null
+          "statement": null,
+          "disclosed": "2018-09",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined £20 million by the UK Information Commissioner’s Office",
+              "year": 2020
+            }
+          ]
         }
       ]
     },
@@ -112,7 +136,15 @@
           "description": "Attackers compromised a chatbot that was installed on Ticketmaster's online payment page. In November 2020 the UK Information Commissioner's Office fined Ticketmaster UK £1.25 million for not having proper security in place.",
           "source_name": "UK Information Commissioner's Office, annual report 2020/21",
           "source_url": "https://ico.org.uk/media2/migrated/2620166/hc-354-information-commissioners-ara-2020-21.pdf",
-          "statement": null
+          "statement": null,
+          "disclosed": "2018-06",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined £1.25 million by the UK Information Commissioner’s Office",
+              "year": 2020
+            }
+          ]
         },
         {
           "title": "2024 third-party cloud database breach",
@@ -132,7 +164,9 @@
           "statement": {
             "title": "Ticketmaster Data Security Incident",
             "url": "https://help.ticketmaster.com/hc/en-us/articles/26110487861137-Ticketmaster-Data-Security-Incident"
-          }
+          },
+          "disclosed": "2024-05",
+          "outcomes": []
         }
       ]
     },
@@ -163,7 +197,15 @@
           "statement": {
             "title": "The Facts on News Reports About Facebook Data",
             "url": "https://about.fb.com/news/2021/04/facts-on-news-reports-about-facebook-data/"
-          }
+          },
+          "disclosed": "2021-04",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined €265 million by Ireland’s Data Protection Commission",
+              "year": 2022
+            }
+          ]
         }
       ]
     },
@@ -195,7 +237,15 @@
           "statement": {
             "title": "2019 Capital One Cyber Incident",
             "url": "https://www.capitalone.com/digital/facts2019/"
-          }
+          },
+          "disclosed": "2019-07",
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Class action settlement approved by a US court",
+              "year": 2022
+            }
+          ]
         }
       ]
     },
@@ -226,7 +276,15 @@
           "statement": {
             "title": "An Important Message to Yahoo Users on Security (filed with the SEC)",
             "url": "https://www.sec.gov/Archives/edgar/data/0001011006/000119312516717056/d260014dex991.htm"
-          }
+          },
+          "disclosed": "2016-09",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Paid a $35 million penalty to the US Securities and Exchange Commission for not telling investors",
+              "year": 2018
+            }
+          ]
         }
       ]
     },
@@ -254,7 +312,21 @@
           "statement": {
             "title": "2016 Data Security Incident",
             "url": "https://www.uber.com/newsroom/2016-data-incident/"
-          }
+          },
+          "disclosed": "2017-11",
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Expanded settlement with the US Federal Trade Commission",
+              "year": 2018
+            },
+            {
+              "kind": "fine",
+              "text": "Fined €600,000 by the Dutch Data Protection Authority for reporting late",
+              "year": 2018,
+              "url": "https://www.autoriteitpersoonsgegevens.nl/uploads/imported/boetebesluit_uber.pdf"
+            }
+          ]
         }
       ]
     },
@@ -283,7 +355,15 @@
           "statement": {
             "title": "Addressing Data Security Concerns",
             "url": "https://blog.23andme.com/articles/addressing-data-security-concerns"
-          }
+          },
+          "disclosed": "2023-10",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined £2.31 million by the UK Information Commissioner’s Office",
+              "year": 2025
+            }
+          ]
         }
       ]
     },
@@ -312,7 +392,9 @@
           "statement": {
             "title": "T-Mobile Cybersecurity Incident Update",
             "url": "https://www.t-mobile.com/news/network/cybersecurity-incident-update-august-2021"
-          }
+          },
+          "disclosed": "2021-08",
+          "outcomes": []
         }
       ]
     },
@@ -344,7 +426,15 @@
           "statement": {
             "title": "Updating our customers about the cybercrime",
             "url": "https://www.medibank.com.au/livebetter/newsroom/post/updating-our-customers-about-the-cybercrime"
-          }
+          },
+          "disclosed": "2022-10",
+          "outcomes": [
+            {
+              "kind": "court",
+              "text": "Australian Information Commissioner started civil penalty proceedings (ongoing)",
+              "year": 2024
+            }
+          ]
         }
       ]
     },
@@ -374,7 +464,15 @@
           "statement": {
             "title": "Optus notifies customers of cyberattack compromising customer information",
             "url": "https://www.optus.com.au/about/media-centre/media-releases/2022/09/optus-notifies-customers-of-cyberattack"
-          }
+          },
+          "disclosed": "2022-09",
+          "outcomes": [
+            {
+              "kind": "court",
+              "text": "Australian Information Commissioner started civil penalty proceedings (ongoing)",
+              "year": 2024
+            }
+          ]
         }
       ]
     },
@@ -400,7 +498,15 @@
           "description": "Criminals tricked staff at hotels in the United Arab Emirates into giving up their Booking.com login details and used them to see customer bookings. The Dutch Data Protection Authority fined Booking.com €475,000 in 2021 because it reported the breach 22 days too late.",
           "source_name": "Autoriteit Persoonsgegevens (Dutch Data Protection Authority)",
           "source_url": "https://autoriteitpersoonsgegevens.nl/en/current/bookingcom-fined-for-delay-in-reporting-data-breach",
-          "statement": null
+          "statement": null,
+          "disclosed": "2019-02",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined €475,000 by the Dutch Data Protection Authority for reporting the breach 22 days late",
+              "year": 2021
+            }
+          ]
         }
       ]
     },
@@ -424,7 +530,9 @@
           "statement": {
             "title": "Protecting Our Members",
             "url": "https://blog.linkedin.com/2016/05/18/protecting-our-members"
-          }
+          },
+          "disclosed": "2012-06",
+          "outcomes": []
         }
       ]
     },
@@ -454,7 +562,9 @@
           "statement": {
             "title": "Important Customer Security Announcement",
             "url": "https://blog.adobe.com/en/publish/2013/10/03/important-customer-security-announcement"
-          }
+          },
+          "disclosed": "2013-10",
+          "outcomes": []
         }
       ]
     },
@@ -467,8 +577,8 @@
       "website": "att.com",
       "breaches": [
         {
-          "title": "2022 call and text records downloaded from a cloud platform",
-          "date": "2022-05",
+          "title": "Call and text records from 2022 downloaded from a cloud platform",
+          "date": "2024-04",
           "status": "confirmed",
           "affected": "Nearly all AT&T cellular customers",
           "categories": [
@@ -482,7 +592,9 @@
           "statement": {
             "title": "AT&T Addresses Illegal Download of Customer Data",
             "url": "https://about.att.com/story/2024/addressing-illegal-download.html"
-          }
+          },
+          "disclosed": "2024-07",
+          "outcomes": []
         },
         {
           "title": "Customer data set released on the dark web",
@@ -504,7 +616,10 @@
           "statement": {
             "title": "AT&T Addresses Recent Data Set Released on the Dark Web",
             "url": "https://about.att.com/story/2024/addressing-data-set-released-on-dark-web.html"
-          }
+          },
+          "disclosed": "2024-03",
+          "outcomes": [],
+          "timing_unclear": true
         }
       ]
     },
@@ -538,7 +653,15 @@
           "statement": {
             "title": "UnitedHealth Group Update on Change Healthcare Cyberattack",
             "url": "https://www.unitedhealthgroup.com/newsroom/2024/2024-03-07-uhg-update-change-healthcare-cyberattack.html"
-          }
+          },
+          "disclosed": "2024-02",
+          "outcomes": [
+            {
+              "kind": "investigation",
+              "text": "Investigated by the US health regulator (HHS Office for Civil Rights)",
+              "year": 2024
+            }
+          ]
         }
       ]
     },
@@ -567,7 +690,9 @@
           "statement": {
             "title": "Update on a Security Incident Involving Third-Party Customer Service",
             "url": "https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service"
-          }
+          },
+          "disclosed": "2025-10",
+          "outcomes": []
         }
       ]
     },
@@ -597,7 +722,9 @@
           "statement": {
             "title": "Protecting Our Customers - Standing Up to Extortionists",
             "url": "https://www.coinbase.com/blog/protecting-our-customers-standing-up-to-extortionists"
-          }
+          },
+          "disclosed": "2025-05",
+          "outcomes": []
         }
       ]
     },
@@ -627,7 +754,9 @@
           "statement": {
             "title": "Update on Qantas cyber incident: Wednesday 9 July 2025",
             "url": "https://www.qantasnewsroom.com.au/media-releases/update-on-qantas-cyber-incident-wednesday-9-july-2025"
-          }
+          },
+          "disclosed": "2025-07",
+          "outcomes": []
         }
       ]
     },
@@ -656,7 +785,9 @@
           "statement": {
             "title": "Caesars Entertainment Form 8-K, September 2023",
             "url": "https://www.sec.gov/Archives/edgar/data/1590895/000119312523235015/d537840d8k.htm"
-          }
+          },
+          "disclosed": "2023-09",
+          "outcomes": []
         }
       ]
     },
@@ -690,7 +821,9 @@
           "statement": {
             "title": "MGM Resorts Form 8-K, October 2023",
             "url": "https://www.sec.gov/Archives/edgar/data/789570/000119312523251667/d461062d8k.htm"
-          }
+          },
+          "disclosed": "2023-09",
+          "outcomes": []
         }
       ]
     },
@@ -715,7 +848,9 @@
           "statement": {
             "title": "Unauthorized Access to Okta's Support Case Management System: Root Cause and Remediation",
             "url": "https://sec.okta.com/articles/2023/11/unauthorized-access-oktas-support-case-management-system-root-cause/"
-          }
+          },
+          "disclosed": "2023-10",
+          "outcomes": []
         }
       ]
     },
@@ -746,7 +881,9 @@
           "statement": {
             "title": "Security Incident December 2022 Update",
             "url": "https://blog.lastpass.com/posts/notice-of-recent-security-incident"
-          }
+          },
+          "disclosed": "2022-12",
+          "outcomes": []
         }
       ]
     },
@@ -774,7 +911,9 @@
           "statement": {
             "title": "An incident impacting some accounts and private information on Twitter",
             "url": "https://privacy.x.com/en/blog/2022/an-issue-affecting-some-anonymous-accounts"
-          }
+          },
+          "disclosed": "2022-08",
+          "outcomes": []
         }
       ]
     },
@@ -804,7 +943,9 @@
           "statement": {
             "title": "Expediting changes to Google+",
             "url": "https://blog.google/innovation-and-ai/technology/safety-security/expediting-changes-google-plus/"
-          }
+          },
+          "disclosed": "2018-10",
+          "outcomes": []
         }
       ]
     },
@@ -822,13 +963,15 @@
             "Email addresses",
             "Hashed passwords"
           ],
-          "description": "In 2016 Dropbox learned that email addresses and hashed passwords stolen in 2012 had surfaced. It reset passwords for users who had not changed them since mid-2012.",
+          "description": "Dropbox announced in July 2012 that a stolen employee password had been used to access a document with user email addresses. In 2016 it learned the 2012 theft also included about 68 million email addresses with hashed passwords, and reset passwords for users who had not changed them since mid-2012.",
           "source_name": "Dropbox",
           "source_url": "https://blog.dropbox.com/topics/company/resetting-passwords-to-keep-your-files-safe",
           "statement": {
             "title": "Resetting passwords to keep your files safe",
             "url": "https://blog.dropbox.com/topics/company/resetting-passwords-to-keep-your-files-safe"
-          }
+          },
+          "disclosed": "2012-07",
+          "outcomes": []
         }
       ]
     },
@@ -855,7 +998,9 @@
           "statement": {
             "title": "Canva Security Incident",
             "url": "https://www.canva.com/help/incident-may24/"
-          }
+          },
+          "disclosed": "2019-05",
+          "outcomes": []
         }
       ]
     },
@@ -883,7 +1028,9 @@
           "statement": {
             "title": "New information about Slack's 2015 security incident",
             "url": "https://slack.com/blog/news/new-information-2015-incident"
-          }
+          },
+          "disclosed": "2015-03",
+          "outcomes": []
         }
       ]
     },
@@ -915,7 +1062,15 @@
           "statement": {
             "title": "Datalek veel groter dan eerder vermeld (Bevolkingsonderzoek Nederland)",
             "url": "https://www.bevolkingsonderzoeknederland.nl/nieuws/datalek-veel-groter-dan-eerder-vermeld/"
-          }
+          },
+          "disclosed": "2025-08",
+          "outcomes": [
+            {
+              "kind": "investigation",
+              "text": "Investigated by the Dutch Data Protection Authority and the Health and Youth Care Inspectorate",
+              "year": 2025
+            }
+          ]
         }
       ]
     },
@@ -944,7 +1099,9 @@
           "statement": {
             "title": "An important notice regarding U.S. customer information",
             "url": "https://news.samsung.com/us/notice-us-customer-information-cybersecurity/"
-          }
+          },
+          "disclosed": "2022-09",
+          "outcomes": []
         }
       ]
     },
@@ -970,7 +1127,9 @@
           "statement": {
             "title": "Updates on the Twitch Security Incident",
             "url": "https://blog.twitch.tv/en/2021/10/15/updates-on-the-twitch-security-incident"
-          }
+          },
+          "disclosed": "2021-10",
+          "outcomes": []
         }
       ]
     },
@@ -997,7 +1156,9 @@
           "statement": {
             "title": "Important notice of a potential data breach (24 August 2022)",
             "url": "https://forums.plex.tv/t/important-notice-of-a-potential-data-breach-24th-of-august-2022/806518"
-          }
+          },
+          "disclosed": "2022-08",
+          "outcomes": []
         }
       ]
     },
@@ -1028,7 +1189,9 @@
           "statement": {
             "title": "Target Confirms Unauthorized Access to Payment Card Data in U.S. Stores",
             "url": "https://corporate.target.com/news-features/article/2013/12/target-confirms-unauthorized-access-to-payment-car"
-          }
+          },
+          "disclosed": "2013-12",
+          "outcomes": []
         }
       ]
     },
@@ -1054,7 +1217,9 @@
           "statement": {
             "title": "The Home Depot Completes Malware Elimination and Enhanced Encryption of Payment Data in All U.S. Stores",
             "url": "https://ir.homedepot.com/news-releases/2014/09-18-2014-014517752"
-          }
+          },
+          "disclosed": "2014-09",
+          "outcomes": []
         }
       ]
     },
@@ -1081,7 +1246,9 @@
           "statement": {
             "title": "Under Armour Notifies MyFitnessPal Users Of Data Security Issue",
             "url": "https://www.sec.gov/Archives/edgar/data/0001336917/000133691718000012/exhibit991march292018.htm"
-          }
+          },
+          "disclosed": "2018-03",
+          "outcomes": []
         }
       ]
     },
@@ -1111,7 +1278,9 @@
           "statement": {
             "title": "eBay Inc. To Ask eBay Users To Change Passwords",
             "url": "https://www.ebayinc.com/stories/news/ebay-inc-ask-ebay-users-change-passwords/"
-          }
+          },
+          "disclosed": "2014-05",
+          "outcomes": []
         }
       ]
     },
@@ -1142,7 +1311,9 @@
           "statement": {
             "title": "Cyber Update",
             "url": "https://corporate.marksandspencer.com/cyber-update"
-          }
+          },
+          "disclosed": "2025-04",
+          "outcomes": []
         }
       ]
     },
@@ -1158,8 +1329,8 @@
       "website": "jdsports.co.uk",
       "breaches": [
         {
-          "title": "Historic online orders breach",
-          "date": "2020",
+          "title": "Breach of historic online orders (2018–2020)",
+          "date": "2023-01",
           "status": "confirmed",
           "affected": "About 10 million customers",
           "categories": [
@@ -1176,7 +1347,9 @@
           "statement": {
             "title": "Cyber security incident regarding historic orders",
             "url": "https://www.jdplc.com/cyber-security-incident-regarding-historic-orders/"
-          }
+          },
+          "disclosed": "2023-01",
+          "outcomes": []
         }
       ]
     },
@@ -1203,7 +1376,9 @@
           "statement": {
             "title": "adidas alerts certain consumers of potential data security incident",
             "url": "https://www.adidas-group.com/en/media/press-releases/adidas-alerts-certain-consumers-of-potential-data-security-incident"
-          }
+          },
+          "disclosed": "2018-06",
+          "outcomes": []
         }
       ]
     },
@@ -1215,8 +1390,8 @@
       "website": "experian.com",
       "breaches": [
         {
-          "title": "2015 breach of T-Mobile credit application data",
-          "date": "2013-09",
+          "title": "2015 breach of T-Mobile credit application data (2013–2015 applicants)",
+          "date": "2015-09",
           "status": "confirmed",
           "affected": "About 15 million people who applied for T-Mobile US services",
           "categories": [
@@ -1229,7 +1404,9 @@
           "description": "A hacker took records from an Experian server that processed credit checks for T-Mobile US, covering applicants from September 2013 to September 2015. Social Security and ID numbers were encrypted, but Experian believed the encryption may have been compromised.",
           "source_name": "T-Mobile US, SEC Form 10-Q",
           "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369915000055/tmus09302015form10-q.htm",
-          "statement": null
+          "statement": null,
+          "disclosed": "2015-10",
+          "outcomes": []
         }
       ]
     },
@@ -1258,7 +1435,15 @@
           "description": "Attackers got in through phishing emails and stole data between December 2014 and January 2015, in what was then the largest health data breach in US history. In 2018 Anthem paid a record $16 million to settle with the US health regulator.",
           "source_name": "US Department of Health and Human Services",
           "source_url": "https://www.hhs.gov/about/news/2018/10/15/anthem-pays-ocr-16-million-record-hipaa-settlement-following-largest-health-data-breach-history.html",
-          "statement": null
+          "statement": null,
+          "disclosed": "2015-02",
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid a record $16 million to settle with the US health regulator (HHS)",
+              "year": 2018
+            }
+          ]
         }
       ]
     },
@@ -1291,7 +1476,9 @@
           "statement": {
             "title": "Cybercrime Update",
             "url": "https://www.latitudefinancial.com.au/about-us/media-releases/cybercrime-update-11-04-2023.html"
-          }
+          },
+          "disclosed": "2023-03",
+          "outcomes": []
         }
       ]
     },
@@ -1319,7 +1506,9 @@
           "statement": {
             "title": "Statement (Banco Santander, May 2024)",
             "url": "https://www.santander.com/en/stories/statement"
-          }
+          },
+          "disclosed": "2024-05",
+          "outcomes": []
         }
       ]
     },
@@ -1349,7 +1538,15 @@
           "statement": {
             "title": "Apology and Notice Concerning Newly Discovered Potential Data Leakage of Customer Information Due to Cloud Settings",
             "url": "https://global.toyota/en/newsroom/corporate/39241625.html"
-          }
+          },
+          "disclosed": "2023-05",
+          "outcomes": [
+            {
+              "kind": "order",
+              "text": "Received guidance from Japan’s Personal Information Protection Commission",
+              "year": 2023
+            }
+          ]
         }
       ]
     },
@@ -1376,7 +1573,9 @@
           "statement": {
             "title": "PowerSchool Cybersecurity Incident",
             "url": "https://www.powerschool.com/security/sis-incident/"
-          }
+          },
+          "disclosed": "2025-01",
+          "outcomes": []
         }
       ]
     },
@@ -1404,7 +1603,9 @@
           "statement": {
             "title": "Robinhood Announces Data Security Incident (Update)",
             "url": "https://www.robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update"
-          }
+          },
+          "disclosed": "2021-11",
+          "outcomes": []
         }
       ]
     },
@@ -1433,7 +1634,9 @@
           "statement": {
             "title": "Block Form 8-K, April 2022",
             "url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312522095215/d343042d8k.htm"
-          }
+          },
+          "disclosed": "2022-04",
+          "outcomes": []
         }
       ]
     },
@@ -1461,7 +1664,9 @@
           "statement": {
             "title": "Addressing the July 2020 e-commerce and marketing data breach",
             "url": "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach"
-          }
+          },
+          "disclosed": "2020-07",
+          "outcomes": []
         }
       ]
     },
@@ -1485,7 +1690,15 @@
           "description": "The US Federal Trade Commission said Chegg's careless security led to four breaches, including one where a former contractor used shared login details to access data on about 40 million customers. Chegg agreed to an FTC order in 2023.",
           "source_name": "US Federal Trade Commission",
           "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/10/ftc-brings-action-against-ed-tech-provider-chegg-careless-security-exposed-personal-data-millions",
-          "statement": null
+          "statement": null,
+          "disclosed": "2018-09",
+          "outcomes": [
+            {
+              "kind": "order",
+              "text": "Ordered by the US Federal Trade Commission to overhaul its data security",
+              "year": 2023
+            }
+          ]
         }
       ]
     },
@@ -1515,7 +1728,9 @@
           "statement": {
             "title": "KLM informeert klanten over incident met persoonsgegevens",
             "url": "https://nieuws.klm.com/klm-informeert-klanten-over-incident-met-persoonsgegevens/"
-          }
+          },
+          "disclosed": "2025-08",
+          "outcomes": []
         }
       ]
     },
@@ -1544,7 +1759,15 @@
           "description": "An attacker got into the systems of French telecom operators Free and Free Mobile in October 2024 and accessed subscriber data, including bank account numbers for some customers. In 2026 France's data protection authority, the CNIL, fined the two companies €42 million.",
           "source_name": "CNIL (French data protection authority)",
           "source_url": "https://www.cnil.fr/fr/sanction-free-2026",
-          "statement": null
+          "statement": null,
+          "disclosed": "2024-10",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined €42 million by France’s data protection authority (CNIL)",
+              "year": 2026
+            }
+          ]
         }
       ]
     },
@@ -1570,7 +1793,9 @@
           "statement": {
             "title": "Information About a Recent Security Incident",
             "url": "https://mailchimp.com/newsroom/january-2023-security-incident/"
-          }
+          },
+          "disclosed": "2023-01",
+          "outcomes": []
         }
       ]
     },
@@ -1596,7 +1821,9 @@
           "statement": {
             "title": "Incident Report: Employee and Customer Account Compromise",
             "url": "https://www.twilio.com/en-us/blog/august-2022-social-engineering-attack"
-          }
+          },
+          "disclosed": "2022-08",
+          "outcomes": []
         }
       ]
     },
@@ -1625,7 +1852,9 @@
           "statement": {
             "title": "GoDaddy blog post on the data security incident (filed with the SEC)",
             "url": "https://www.sec.gov/Archives/edgar/data/1609711/000160971121000122/gddyblogpostnov222021.htm"
-          }
+          },
+          "disclosed": "2021-11",
+          "outcomes": []
         }
       ]
     },
@@ -1654,7 +1883,9 @@
           "statement": {
             "title": "「ニンテンドーネットワークID」に対する不正ログイン発生のご報告",
             "url": "https://support.nintendo.com/jp/information/2020/0424.html"
-          }
+          },
+          "disclosed": "2020-04",
+          "outcomes": []
         }
       ]
     },
@@ -1664,8 +1895,8 @@
       "website": "deezer.com",
       "breaches": [
         {
-          "title": "Data leak at a former partner",
-          "date": "2019",
+          "title": "Leak of a 2019 copy of user data kept by a former partner",
+          "date": "2022",
           "status": "confirmed",
           "affected": "Deezer users whose data was held by the former partner",
           "categories": [
@@ -1680,7 +1911,9 @@
           "statement": {
             "title": "Third Party Data Breach",
             "url": "https://support.deezer.com/hc/en-gb/articles/7726141292317-Third-Party-Data-Breach"
-          }
+          },
+          "disclosed": "2022-11",
+          "outcomes": []
         }
       ]
     },
@@ -1708,7 +1941,9 @@
           "statement": {
             "title": "Notice of Data Security Incident (sample letter)",
             "url": "https://www.allianzlife.com/-/media/Files/Global/documents/2025/08/15/20/07/ELN-24716-Life-Ins-notification-sample_2025-08.pdf"
-          }
+          },
+          "disclosed": "2025-07",
+          "outcomes": []
         }
       ]
     },
@@ -1735,7 +1970,9 @@
           "statement": {
             "title": "Update on the November 29 personal information incident",
             "url": "https://www.aboutcoupang.com/update-on-the-november-29-personal-information-incident/"
-          }
+          },
+          "disclosed": "2025-11",
+          "outcomes": []
         }
       ]
     },
@@ -1763,7 +2000,15 @@
           "statement": {
             "title": "SK Telecom Announces Accountability and Commitment Program",
             "url": "https://news.sktelecom.com/en/1979"
-          }
+          },
+          "disclosed": "2025-04",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined a record 134.8 billion won by South Korea’s privacy regulator (being appealed)",
+              "year": 2025
+            }
+          ]
         }
       ]
     },
@@ -1792,7 +2037,9 @@
           "statement": {
             "title": "Bouygues Telecom, victime d'une cyberattaque",
             "url": "https://www.corporate.bouyguestelecom.fr/archives-communique-presse/bouygues-telecom-annonce-avoir-ete-victime-dune-cyberattaque/"
-          }
+          },
+          "disclosed": "2025-08",
+          "outcomes": []
         }
       ]
     },
@@ -1821,7 +2068,9 @@
           "statement": {
             "title": "Orange Belgium informs its customers about a cyberattack",
             "url": "https://corporate.orange.be/en/node/57971"
-          }
+          },
+          "disclosed": "2025-08",
+          "outcomes": []
         }
       ]
     },
@@ -1845,7 +2094,9 @@
           "description": "An attacker used social engineering to get into a third-party application used by TransUnion's customer support. TransUnion says its core credit database was not affected and offered affected consumers credit monitoring.",
           "source_name": "TransUnion, Form 10-K",
           "source_url": "https://investors.transunion.com/~/media/Files/T/Transunion-IR-V2/reports-and-presentations/q4-2025-form-10-k.pdf",
-          "statement": null
+          "statement": null,
+          "disclosed": "2025-08",
+          "outcomes": []
         }
       ]
     },
@@ -1875,7 +2126,15 @@
           "description": "Hackers got into Odido's customer database by phishing customer service staff and pretending to be the IT department. Odido refused to pay and the criminals published the data. The Dutch Data Protection Authority is also looking at whether Odido kept former customers' data too long.",
           "source_name": "NOS",
           "source_url": "https://nos.nl/artikel/2602283-odido-hackers-kwamen-binnen-via-phishing-deden-zich-voor-als-ict-afdeling",
-          "statement": null
+          "statement": null,
+          "disclosed": "2026-02",
+          "outcomes": [
+            {
+              "kind": "investigation",
+              "text": "Investigated by the Dutch Data Protection Authority over how long it kept customer data",
+              "year": 2026
+            }
+          ]
         }
       ]
     },
@@ -1902,7 +2161,9 @@
           "statement": {
             "title": "Microsoft Actions Following Attack by Nation State Actor Midnight Blizzard",
             "url": "https://www.microsoft.com/en-us/msrc/blog/2024/01/microsoft-actions-following-attack-by-nation-state-actor-midnight-blizzard"
-          }
+          },
+          "disclosed": "2024-01",
+          "outcomes": []
         }
       ]
     }

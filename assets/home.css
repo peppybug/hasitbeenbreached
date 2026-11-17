@@ -211,3 +211,30 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 .statement.none{background:var(--bg);border-left-color:var(--line-strong)}
 .statement.none .st-label{color:var(--muted)}
 .st-none{font-size:.92rem;color:var(--muted)}
+
+/* ---------- track record ---------- */
+.track{margin:16px 0 0;padding:16px;border-radius:14px;background:var(--bg);border:1px solid var(--line)}
+.track-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;margin-bottom:12px}
+.track-head h4{font-size:1.05rem;margin:0}
+.track-note{margin:0;font-size:.82rem;color:var(--muted)}
+.track-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.tstat{background:var(--surface);border-radius:10px;padding:10px 12px;border-top:3px solid var(--line)}
+.tstat p{margin:0}
+.tl{font-size:.78rem;color:var(--muted);line-height:1.3}
+.tv{font:700 1.08rem/1.25 var(--display);letter-spacing:-.01em;margin-top:4px!important}
+.ts{font-size:.78rem;color:var(--muted);margin-top:2px!important}
+.tstat.lag-fast{border-top-color:#2E9E5B}.tstat.lag-mid{border-top-color:#E08A00}.tstat.lag-slow{border-top-color:#D7263D}
+.tstat.has-action{border-top-color:var(--accent)}
+.tstat.risk-high{border-top-color:#D7263D}.tstat.risk-high .tv{color:#A3122A}
+.tstat.risk-med{border-top-color:#E08A00}.tstat.risk-med .tv{color:#8A4B00}
+.tstat.risk-low{border-top-color:#9AA0B4}
+.lagtag{display:inline-block;margin-left:8px;font-size:.8rem;font-weight:600;padding:1px 8px;border-radius:999px;vertical-align:1px}
+.lagtag.lag-fast{background:#E9F5EC;color:#146C2E}.lagtag.lag-mid{background:#FFF0D9;color:#8A4B00}.lagtag.lag-slow{background:#FDE7E9;color:#A3122A}
+.outcomes{margin:14px 0 0;padding:12px 14px;border-radius:12px;border:1px solid var(--line)}
+.outcomes .ol{margin:0 0 6px;font-size:.8rem;font-weight:600;color:var(--muted)}
+.outcomes ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.outcomes li{display:flex;flex-direction:column;gap:2px;padding-left:12px;border-left:3px solid var(--accent)}
+.outcomes li.oc-fine{border-left-color:#D7263D}.outcomes li.oc-court{border-left-color:#E08A00}
+.okind{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.otext{font-size:.95rem}
+@media(max-width:480px){.track-grid{grid-template-columns:1fr 1fr}.lagtag{margin:4px 0 0;display:table}}
