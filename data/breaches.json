@@ -92,14 +92,15 @@
       ]
     },
     {
-      "name": "Ticketmaster UK",
+      "name": "Ticketmaster",
       "aliases": [
-        "Ticketmaster"
+        "Ticketmaster UK",
+        "Live Nation"
       ],
-      "website": "ticketmaster.co.uk",
+      "website": "ticketmaster.com",
       "breaches": [
         {
-          "title": "2018 payment page chatbot attack",
+          "title": "2018 UK payment page chatbot attack",
           "date": "2018",
           "status": "confirmed",
           "affected": "9.4 million customers across Europe, including 1.5 million in the UK",
@@ -112,6 +113,26 @@
           "source_name": "UK Information Commissioner's Office, annual report 2020/21",
           "source_url": "https://ico.org.uk/media2/migrated/2620166/hc-354-information-commissioners-ara-2020-21.pdf",
           "statement": null
+        },
+        {
+          "title": "2024 third-party cloud database breach",
+          "date": "2024-04",
+          "status": "confirmed",
+          "affected": "Some customers who bought tickets for North American events",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Phone numbers",
+            "Encrypted payment card numbers (some)",
+            "Card expiry dates (some)"
+          ],
+          "description": "Live Nation told US regulators in May 2024 that it found unauthorised activity in a third-party cloud database containing mostly Ticketmaster data, and that criminals offered what they said was user data for sale. Ticketmaster says the database held limited personal information.",
+          "source_name": "Live Nation Entertainment, SEC Form 8-K",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1335258/000133525824000081/lyv-20240520.htm",
+          "statement": {
+            "title": "Ticketmaster Data Security Incident",
+            "url": "https://help.ticketmaster.com/hc/en-us/articles/26110487861137-Ticketmaster-Data-Security-Incident"
+          }
         }
       ]
     },
@@ -433,6 +454,1454 @@
           "statement": {
             "title": "Important Customer Security Announcement",
             "url": "https://blog.adobe.com/en/publish/2013/10/03/important-customer-security-announcement"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AT&T",
+      "aliases": [
+        "AT and T",
+        "ATT"
+      ],
+      "website": "att.com",
+      "breaches": [
+        {
+          "title": "2022 call and text records downloaded from a cloud platform",
+          "date": "2022-05",
+          "status": "confirmed",
+          "affected": "Nearly all AT&T cellular customers",
+          "categories": [
+            "Phone numbers",
+            "Call and text records (no content)",
+            "Locations (cell site IDs, some records)"
+          ],
+          "description": "AT&T said in July 2024 that records of calls and texts from May to October 2022 were illegally downloaded from a workspace on a third-party cloud platform. The records show which numbers customers contacted, not the content of calls or texts, and do not include names, but names can often be looked up from phone numbers.",
+          "source_name": "AT&T",
+          "source_url": "https://about.att.com/story/2024/addressing-illegal-download.html",
+          "statement": {
+            "title": "AT&T Addresses Illegal Download of Customer Data",
+            "url": "https://about.att.com/story/2024/addressing-illegal-download.html"
+          }
+        },
+        {
+          "title": "Customer data set released on the dark web",
+          "date": "2019",
+          "status": "confirmed",
+          "affected": "About 7.6 million current and 65.4 million former account holders",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Home addresses",
+            "Phone numbers",
+            "Dates of birth",
+            "Social Security numbers",
+            "Account passcodes"
+          ],
+          "description": "In March 2024 AT&T confirmed that a data set found on the dark web contained AT&T-specific information, believed to be from 2019 or earlier. AT&T said it had not yet determined whether the data came from AT&T or one of its vendors, and reset passcodes for affected current customers.",
+          "source_name": "AT&T",
+          "source_url": "https://about.att.com/story/2024/addressing-data-set-released-on-dark-web.html",
+          "statement": {
+            "title": "AT&T Addresses Recent Data Set Released on the Dark Web",
+            "url": "https://about.att.com/story/2024/addressing-data-set-released-on-dark-web.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Change Healthcare",
+      "aliases": [
+        "UnitedHealth",
+        "UnitedHealth Group",
+        "Optum"
+      ],
+      "website": "changehealthcare.com",
+      "breaches": [
+        {
+          "title": "2024 ransomware attack",
+          "date": "2024-02",
+          "status": "confirmed",
+          "affected": "About 190 million people (later updated to about 192.7 million)",
+          "categories": [
+            "Names",
+            "Health insurance information",
+            "Health information (diagnoses, treatments, test results)",
+            "Billing and claims information",
+            "Social Security numbers (some)",
+            "Home addresses",
+            "Phone numbers",
+            "Dates of birth"
+          ],
+          "description": "A ransomware attack on Change Healthcare, a UnitedHealth Group company that processes US medical claims, disrupted healthcare payments across the US in February 2024. It became the largest health data breach reported to US regulators.",
+          "source_name": "US Department of Health and Human Services",
+          "source_url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/change-healthcare-cybersecurity-incident-frequently-asked-questions/index.html",
+          "statement": {
+            "title": "UnitedHealth Group Update on Change Healthcare Cyberattack",
+            "url": "https://www.unitedhealthgroup.com/newsroom/2024/2024-03-07-uhg-update-change-healthcare-cyberattack.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Discord",
+      "aliases": [],
+      "website": "discord.com",
+      "breaches": [
+        {
+          "title": "2025 customer service vendor breach",
+          "date": "2025-09",
+          "status": "confirmed",
+          "affected": "Users who contacted Discord support, including about 70,000 whose ID photos may have been exposed",
+          "categories": [
+            "Names",
+            "Usernames",
+            "Email addresses",
+            "IP addresses",
+            "Support messages",
+            "Government ID images (some)",
+            "Partial payment card details (last four digits, some)"
+          ],
+          "description": "An attacker broke into a third-party customer service provider used by Discord and accessed data from users who had contacted support or Trust and Safety, including ID photos submitted for age checks. Discord says its own systems were not breached and it stopped working with the vendor.",
+          "source_name": "Discord",
+          "source_url": "https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service",
+          "statement": {
+            "title": "Update on a Security Incident Involving Third-Party Customer Service",
+            "url": "https://discord.com/press-releases/update-on-security-incident-involving-third-party-customer-service"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Coinbase",
+      "aliases": [],
+      "website": "coinbase.com",
+      "breaches": [
+        {
+          "title": "2025 insider data theft and extortion attempt",
+          "date": "2025",
+          "status": "confirmed",
+          "affected": "Less than 1% of Coinbase's monthly transacting users",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Phone numbers",
+            "Email addresses",
+            "Partial Social Security numbers (last four digits)",
+            "Partial bank account numbers",
+            "Government ID images",
+            "Account balances and transaction history"
+          ],
+          "description": "Criminals paid a small group of overseas customer support workers to copy customer data, then tried to extort Coinbase for $20 million. Coinbase refused to pay, fired the workers and said it would reimburse customers tricked into sending money. Passwords, private keys and funds were not accessed.",
+          "source_name": "Coinbase",
+          "source_url": "https://www.coinbase.com/blog/protecting-our-customers-standing-up-to-extortionists",
+          "statement": {
+            "title": "Protecting Our Customers - Standing Up to Extortionists",
+            "url": "https://www.coinbase.com/blog/protecting-our-customers-standing-up-to-extortionists"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Qantas",
+      "aliases": [
+        "Qantas Airways"
+      ],
+      "website": "qantas.com",
+      "breaches": [
+        {
+          "title": "2025 contact centre platform breach",
+          "date": "2025-06",
+          "status": "confirmed",
+          "affected": "5.7 million customers",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Frequent Flyer numbers",
+            "Phone numbers (some)",
+            "Dates of birth (some)",
+            "Home addresses (some)"
+          ],
+          "description": "A cyber criminal accessed a third-party customer service platform used by a Qantas contact centre. Qantas says passwords, PINs, credit card details and passport details were not accessed, and it got a court order to stop the stolen data being published.",
+          "source_name": "Qantas Newsroom",
+          "source_url": "https://www.qantasnewsroom.com.au/media-releases/update-on-qantas-cyber-incident-wednesday-9-july-2025",
+          "statement": {
+            "title": "Update on Qantas cyber incident: Wednesday 9 July 2025",
+            "url": "https://www.qantasnewsroom.com.au/media-releases/update-on-qantas-cyber-incident-wednesday-9-july-2025"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Caesars Entertainment",
+      "aliases": [
+        "Caesars",
+        "Caesars Rewards"
+      ],
+      "website": "caesars.com",
+      "breaches": [
+        {
+          "title": "2023 loyalty program database theft",
+          "date": "2023-08",
+          "status": "confirmed",
+          "affected": "A significant number of Caesars Rewards members",
+          "categories": [
+            "Names",
+            "Driver's licence numbers",
+            "Social Security numbers",
+            "Loyalty programme numbers"
+          ],
+          "description": "Attackers used social engineering on an outsourced IT support vendor to get into Caesars' network and copy its loyalty program database. Caesars offered credit monitoring to all loyalty members.",
+          "source_name": "Caesars Entertainment, SEC Form 8-K",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1590895/000119312523235015/d537840d8k.htm",
+          "statement": {
+            "title": "Caesars Entertainment Form 8-K, September 2023",
+            "url": "https://www.sec.gov/Archives/edgar/data/1590895/000119312523235015/d537840d8k.htm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MGM Resorts",
+      "aliases": [
+        "MGM",
+        "MGM Resorts International",
+        "MGM Grand"
+      ],
+      "website": "mgmresorts.com",
+      "breaches": [
+        {
+          "title": "2023 cyberattack",
+          "date": "2023-09",
+          "status": "confirmed",
+          "affected": "Some MGM Resorts customers",
+          "categories": [
+            "Names",
+            "Phone numbers",
+            "Email addresses",
+            "Home addresses",
+            "Dates of birth",
+            "Driver's licence numbers",
+            "Social Security numbers (some)",
+            "Passport numbers (some)"
+          ],
+          "description": "A September 2023 cyberattack forced MGM to shut down systems at its US casinos and hotels for days. MGM says the attackers took personal information for some customers, but not passwords, bank account numbers or payment card details.",
+          "source_name": "MGM Resorts International, SEC filing",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/789570/000119312523251667/d461062d8k.htm",
+          "statement": {
+            "title": "MGM Resorts Form 8-K, October 2023",
+            "url": "https://www.sec.gov/Archives/edgar/data/789570/000119312523251667/d461062d8k.htm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Okta",
+      "aliases": [],
+      "website": "okta.com",
+      "breaches": [
+        {
+          "title": "2023 support system breach",
+          "date": "2023-09",
+          "status": "confirmed",
+          "affected": "All users of Okta's customer support system, and files of 134 customers",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Session tokens (some customers)"
+          ],
+          "description": "An attacker used a stolen service account to access Okta's customer support system and downloaded files from 134 customers, some containing session tokens used to hijack sessions. Okta later found the attacker also downloaded the names and email addresses of all support system users.",
+          "source_name": "Okta Security",
+          "source_url": "https://sec.okta.com/articles/2023/11/unauthorized-access-oktas-support-case-management-system-root-cause/",
+          "statement": {
+            "title": "Unauthorized Access to Okta's Support Case Management System: Root Cause and Remediation",
+            "url": "https://sec.okta.com/articles/2023/11/unauthorized-access-oktas-support-case-management-system-root-cause/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LastPass",
+      "aliases": [
+        "Last Pass"
+      ],
+      "website": "lastpass.com",
+      "breaches": [
+        {
+          "title": "2022 cloud backup and vault data theft",
+          "date": "2022-08",
+          "status": "confirmed",
+          "affected": "LastPass customers whose data was in the stolen backups",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Billing addresses",
+            "Phone numbers",
+            "IP addresses",
+            "Encrypted password vaults",
+            "Website URLs saved in vaults (unencrypted)"
+          ],
+          "description": "After an earlier break-in at a developer environment, an attacker copied backups containing customer account information and encrypted password vault data. Vault contents can only be unlocked with each user's master password, which LastPass does not store, but weak master passwords could be guessed.",
+          "source_name": "LastPass",
+          "source_url": "https://blog.lastpass.com/posts/notice-of-recent-security-incident",
+          "statement": {
+            "title": "Security Incident December 2022 Update",
+            "url": "https://blog.lastpass.com/posts/notice-of-recent-security-incident"
+          }
+        }
+      ]
+    },
+    {
+      "name": "X (Twitter)",
+      "aliases": [
+        "Twitter",
+        "X"
+      ],
+      "website": "x.com",
+      "breaches": [
+        {
+          "title": "Account lookup vulnerability",
+          "date": "2022-01",
+          "status": "confirmed",
+          "affected": "About 5.4 million accounts (reported)",
+          "categories": [
+            "Email addresses",
+            "Phone numbers",
+            "Public profile information"
+          ],
+          "description": "A bug introduced in 2021 let someone enter an email address or phone number and find out which Twitter account it belonged to. Attackers used it to build a list of accounts linked to private emails and phone numbers. Twitter fixed the bug in January 2022 and confirmed the incident in August 2022.",
+          "source_name": "Twitter Privacy Center",
+          "source_url": "https://privacy.x.com/en/blog/2022/an-issue-affecting-some-anonymous-accounts",
+          "statement": {
+            "title": "An incident impacting some accounts and private information on Twitter",
+            "url": "https://privacy.x.com/en/blog/2022/an-issue-affecting-some-anonymous-accounts"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Google",
+      "aliases": [
+        "Google+",
+        "Google Plus",
+        "Alphabet"
+      ],
+      "website": "google.com",
+      "breaches": [
+        {
+          "title": "Google+ profile API bug",
+          "date": "2018",
+          "status": "confirmed",
+          "affected": "About 52.5 million Google+ users",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Occupations",
+            "Ages"
+          ],
+          "description": "Bugs in a Google+ API could let apps see profile fields that users had not made public. Google said it found no evidence the data was misused, and it shut down consumer Google+ early as a result.",
+          "source_name": "Google",
+          "source_url": "https://blog.google/innovation-and-ai/technology/safety-security/expediting-changes-google-plus/",
+          "statement": {
+            "title": "Expediting changes to Google+",
+            "url": "https://blog.google/innovation-and-ai/technology/safety-security/expediting-changes-google-plus/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dropbox",
+      "aliases": [],
+      "website": "dropbox.com",
+      "breaches": [
+        {
+          "title": "2012 credentials theft",
+          "date": "2012",
+          "status": "confirmed",
+          "affected": "About 68 million users",
+          "categories": [
+            "Email addresses",
+            "Hashed passwords"
+          ],
+          "description": "In 2016 Dropbox learned that email addresses and hashed passwords stolen in 2012 had surfaced. It reset passwords for users who had not changed them since mid-2012.",
+          "source_name": "Dropbox",
+          "source_url": "https://blog.dropbox.com/topics/company/resetting-passwords-to-keep-your-files-safe",
+          "statement": {
+            "title": "Resetting passwords to keep your files safe",
+            "url": "https://blog.dropbox.com/topics/company/resetting-passwords-to-keep-your-files-safe"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Canva",
+      "aliases": [],
+      "website": "canva.com",
+      "breaches": [
+        {
+          "title": "2019 user database breach",
+          "date": "2019-05",
+          "status": "confirmed",
+          "affected": "Up to 139 million users",
+          "categories": [
+            "Names",
+            "Usernames",
+            "Email addresses",
+            "Locations (country and city)",
+            "Hashed passwords"
+          ],
+          "description": "An attacker accessed Canva's user profile data in May 2019. Passwords were hashed with bcrypt, but Canva later said about 4 million passwords were cracked, and it reset passwords for users who had not changed them.",
+          "source_name": "Canva",
+          "source_url": "https://www.canva.com/help/incident-may24/",
+          "statement": {
+            "title": "Canva Security Incident",
+            "url": "https://www.canva.com/help/incident-may24/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Slack",
+      "aliases": [
+        "Salesforce Slack"
+      ],
+      "website": "slack.com",
+      "breaches": [
+        {
+          "title": "2015 user database breach",
+          "date": "2015-02",
+          "status": "confirmed",
+          "affected": "Slack users at the time (passwords reset for about 1% of accounts in 2019)",
+          "categories": [
+            "Usernames",
+            "Email addresses",
+            "Hashed passwords",
+            "Passwords captured as typed (some users)"
+          ],
+          "description": "Attackers got into a Slack database with usernames and hashed passwords in 2015, and inserted code to capture passwords as people typed them. In 2019 Slack reset the passwords of accounts active at the time as a precaution.",
+          "source_name": "Slack",
+          "source_url": "https://slack.com/blog/news/new-information-2015-incident",
+          "statement": {
+            "title": "New information about Slack's 2015 security incident",
+            "url": "https://slack.com/blog/news/new-information-2015-incident"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clinical Diagnostics NMDL",
+      "aliases": [
+        "Bevolkingsonderzoek Nederland",
+        "Bevolkingsonderzoek baarmoederhalskanker",
+        "Clinical Diagnostics"
+      ],
+      "website": "clinical-diagnostics.nl",
+      "breaches": [
+        {
+          "title": "2025 lab hack affecting the cervical cancer screening programme",
+          "date": "2025-07",
+          "status": "confirmed",
+          "affected": "Up to about 941,000 participants in the Dutch cervical cancer screening programme",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Dates of birth",
+            "Citizen service numbers (BSN)",
+            "Test results",
+            "Names of GPs"
+          ],
+          "description": "Hackers broke into Clinical Diagnostics NMDL, a Dutch laboratory that analysed tests for the national cervical cancer screening programme. Bevolkingsonderzoek Nederland first reported about 485,000 affected participants, later decided to write to all 941,000 people whose data it had shared with the lab, and stopped using the lab. The Dutch Data Protection Authority started an investigation.",
+          "source_name": "Bevolkingsonderzoek Nederland",
+          "source_url": "https://www.bevolkingsonderzoeknederland.nl/nieuws/datalek-veel-groter-dan-eerder-vermeld/",
+          "statement": {
+            "title": "Datalek veel groter dan eerder vermeld (Bevolkingsonderzoek Nederland)",
+            "url": "https://www.bevolkingsonderzoeknederland.nl/nieuws/datalek-veel-groter-dan-eerder-vermeld/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Samsung",
+      "aliases": [
+        "Samsung Electronics America"
+      ],
+      "website": "samsung.com",
+      "breaches": [
+        {
+          "title": "2022 US customer data breach",
+          "date": "2022-07",
+          "status": "confirmed",
+          "affected": "Some Samsung customers in the US",
+          "categories": [
+            "Names",
+            "Contact details",
+            "Demographic information",
+            "Dates of birth",
+            "Product registration details"
+          ],
+          "description": "An unauthorised third party took information from some of Samsung's US systems in late July 2022. Samsung says Social Security numbers and credit or debit card numbers were not affected.",
+          "source_name": "Samsung Newsroom",
+          "source_url": "https://news.samsung.com/us/notice-us-customer-information-cybersecurity/",
+          "statement": {
+            "title": "An important notice regarding U.S. customer information",
+            "url": "https://news.samsung.com/us/notice-us-customer-information-cybersecurity/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Twitch",
+      "aliases": [
+        "Amazon Twitch"
+      ],
+      "website": "twitch.tv",
+      "breaches": [
+        {
+          "title": "2021 source code and creator payout leak",
+          "date": "2021-10",
+          "status": "confirmed",
+          "affected": "A small fraction of users, mainly streamers",
+          "categories": [
+            "Creator payout data (some streamers)",
+            "Internal source code"
+          ],
+          "description": "A server configuration error let an outsider copy Twitch's source code and a subset of creator payout data, which was then posted online. Twitch says passwords, full card numbers and bank details were not exposed.",
+          "source_name": "Twitch",
+          "source_url": "https://blog.twitch.tv/en/2021/10/15/updates-on-the-twitch-security-incident",
+          "statement": {
+            "title": "Updates on the Twitch Security Incident",
+            "url": "https://blog.twitch.tv/en/2021/10/15/updates-on-the-twitch-security-incident"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Plex",
+      "aliases": [
+        "Plex Media Server"
+      ],
+      "website": "plex.tv",
+      "breaches": [
+        {
+          "title": "2022 user database breach",
+          "date": "2022-08",
+          "status": "confirmed",
+          "affected": "Plex account holders (all were asked to reset passwords)",
+          "categories": [
+            "Email addresses",
+            "Usernames",
+            "Hashed passwords"
+          ],
+          "description": "An outsider accessed a Plex database containing emails, usernames and hashed passwords. Plex says it does not store card data, and required all users to reset their passwords.",
+          "source_name": "Plex",
+          "source_url": "https://forums.plex.tv/t/important-notice-of-a-potential-data-breach-24th-of-august-2022/806518",
+          "statement": {
+            "title": "Important notice of a potential data breach (24 August 2022)",
+            "url": "https://forums.plex.tv/t/important-notice-of-a-potential-data-breach-24th-of-august-2022/806518"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Target",
+      "aliases": [
+        "Target Corporation"
+      ],
+      "website": "target.com",
+      "breaches": [
+        {
+          "title": "2013 holiday payment card theft",
+          "date": "2013-11",
+          "status": "confirmed",
+          "affected": "About 40 million payment cards, plus contact details of up to 70 million people",
+          "categories": [
+            "Names",
+            "Payment card numbers",
+            "Card expiry dates",
+            "Card security codes (CVV)",
+            "Email addresses",
+            "Phone numbers",
+            "Home addresses"
+          ],
+          "description": "Malware on checkout terminals in Target's US stores captured card data between 27 November and 15 December 2013. Target later said contact details of up to 70 million people were also taken.",
+          "source_name": "Target",
+          "source_url": "https://corporate.target.com/news-features/article/2013/12/target-confirms-unauthorized-access-to-payment-car",
+          "statement": {
+            "title": "Target Confirms Unauthorized Access to Payment Card Data in U.S. Stores",
+            "url": "https://corporate.target.com/news-features/article/2013/12/target-confirms-unauthorized-access-to-payment-car"
+          }
+        }
+      ]
+    },
+    {
+      "name": "The Home Depot",
+      "aliases": [
+        "Home Depot"
+      ],
+      "website": "homedepot.com",
+      "breaches": [
+        {
+          "title": "2014 payment card malware",
+          "date": "2014-04",
+          "status": "confirmed",
+          "affected": "About 56 million payment cards and 53 million email addresses",
+          "categories": [
+            "Payment card details",
+            "Email addresses"
+          ],
+          "description": "Custom-built malware on self-checkout systems in US and Canadian stores captured card details between April and September 2014. Home Depot later said files with about 53 million email addresses were also taken.",
+          "source_name": "The Home Depot",
+          "source_url": "https://ir.homedepot.com/news-releases/2014/09-18-2014-014517752",
+          "statement": {
+            "title": "The Home Depot Completes Malware Elimination and Enhanced Encryption of Payment Data in All U.S. Stores",
+            "url": "https://ir.homedepot.com/news-releases/2014/09-18-2014-014517752"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MyFitnessPal",
+      "aliases": [
+        "Under Armour"
+      ],
+      "website": "myfitnesspal.com",
+      "breaches": [
+        {
+          "title": "2018 account data breach",
+          "date": "2018-02",
+          "status": "confirmed",
+          "affected": "About 150 million accounts",
+          "categories": [
+            "Usernames",
+            "Email addresses",
+            "Hashed passwords"
+          ],
+          "description": "An unauthorised party took MyFitnessPal account data in February 2018, while the app was owned by Under Armour. Most passwords were hashed with bcrypt, and users were asked to change them.",
+          "source_name": "Under Armour, SEC Form 8-K",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001336917/000133691718000012/exhibit991march292018.htm",
+          "statement": {
+            "title": "Under Armour Notifies MyFitnessPal Users Of Data Security Issue",
+            "url": "https://www.sec.gov/Archives/edgar/data/0001336917/000133691718000012/exhibit991march292018.htm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "eBay",
+      "aliases": [
+        "eBay Inc."
+      ],
+      "website": "ebay.com",
+      "breaches": [
+        {
+          "title": "2014 user database breach",
+          "date": "2014-02",
+          "status": "confirmed",
+          "affected": "eBay users worldwide (all were asked to change passwords)",
+          "categories": [
+            "Names",
+            "Encrypted passwords",
+            "Email addresses",
+            "Home addresses",
+            "Phone numbers",
+            "Dates of birth"
+          ],
+          "description": "Attackers used a few stolen employee logins to reach a database of customer details between late February and early March 2014. eBay asked every user to change their password and said financial data was stored separately and not accessed.",
+          "source_name": "eBay Inc.",
+          "source_url": "https://www.ebayinc.com/stories/news/ebay-inc-ask-ebay-users-change-passwords/",
+          "statement": {
+            "title": "eBay Inc. To Ask eBay Users To Change Passwords",
+            "url": "https://www.ebayinc.com/stories/news/ebay-inc-ask-ebay-users-change-passwords/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Marks & Spencer",
+      "aliases": [
+        "M&S",
+        "Marks and Spencer"
+      ],
+      "website": "marksandspencer.com",
+      "breaches": [
+        {
+          "title": "2025 cyberattack",
+          "date": "2025-04",
+          "status": "confirmed",
+          "affected": "Some M&S customers",
+          "categories": [
+            "Names",
+            "Contact details",
+            "Dates of birth",
+            "Online order history",
+            "Household information",
+            "Masked payment card details"
+          ],
+          "description": "A cyberattack in April 2025 forced M&S to pause online orders for weeks. M&S says some customer data was taken, but not usable card details or account passwords, and expected the attack to cost around £300 million.",
+          "source_name": "Marks & Spencer",
+          "source_url": "https://corporate.marksandspencer.com/cyber-update",
+          "statement": {
+            "title": "Cyber Update",
+            "url": "https://corporate.marksandspencer.com/cyber-update"
+          }
+        }
+      ]
+    },
+    {
+      "name": "JD Sports",
+      "aliases": [
+        "JD",
+        "Size?",
+        "Millets",
+        "Blacks",
+        "Scotts"
+      ],
+      "website": "jdsports.co.uk",
+      "breaches": [
+        {
+          "title": "Historic online orders breach",
+          "date": "2020",
+          "status": "confirmed",
+          "affected": "About 10 million customers",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Email addresses",
+            "Phone numbers",
+            "Order details",
+            "Partial payment card details (last four digits)"
+          ],
+          "description": "In January 2023 JD Sports said attackers accessed a system holding online orders from November 2018 to October 2020 for its JD, Size?, Millets, Blacks, Scotts and MilletSport brands. It does not hold full card details and found no sign that passwords were accessed.",
+          "source_name": "JD Sports Fashion plc",
+          "source_url": "https://www.jdplc.com/cyber-security-incident-regarding-historic-orders/",
+          "statement": {
+            "title": "Cyber security incident regarding historic orders",
+            "url": "https://www.jdplc.com/cyber-security-incident-regarding-historic-orders/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adidas",
+      "aliases": [
+        "Adidas"
+      ],
+      "website": "adidas.com",
+      "breaches": [
+        {
+          "title": "2018 US website data breach",
+          "date": "2018-06",
+          "status": "confirmed",
+          "affected": "Certain adidas consumers (US website)",
+          "categories": [
+            "Contact details",
+            "Usernames",
+            "Encrypted passwords"
+          ],
+          "description": "In June 2018 adidas said an unauthorised party claimed to have obtained limited data about some consumers who used its US website. adidas said it had no reason to believe card or fitness data was affected.",
+          "source_name": "adidas",
+          "source_url": "https://www.adidas-group.com/en/media/press-releases/adidas-alerts-certain-consumers-of-potential-data-security-incident",
+          "statement": {
+            "title": "adidas alerts certain consumers of potential data security incident",
+            "url": "https://www.adidas-group.com/en/media/press-releases/adidas-alerts-certain-consumers-of-potential-data-security-incident"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Experian",
+      "aliases": [
+        "Experian Decision Analytics"
+      ],
+      "website": "experian.com",
+      "breaches": [
+        {
+          "title": "2015 breach of T-Mobile credit application data",
+          "date": "2013-09",
+          "status": "confirmed",
+          "affected": "About 15 million people who applied for T-Mobile US services",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Dates of birth",
+            "Social Security numbers",
+            "ID numbers (driver's licence, passport)"
+          ],
+          "description": "A hacker took records from an Experian server that processed credit checks for T-Mobile US, covering applicants from September 2013 to September 2015. Social Security and ID numbers were encrypted, but Experian believed the encryption may have been compromised.",
+          "source_name": "T-Mobile US, SEC Form 10-Q",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001283699/000128369915000055/tmus09302015form10-q.htm",
+          "statement": null
+        }
+      ]
+    },
+    {
+      "name": "Anthem",
+      "aliases": [
+        "Elevance Health",
+        "Anthem Blue Cross"
+      ],
+      "website": "anthem.com",
+      "breaches": [
+        {
+          "title": "2015 cyberattack",
+          "date": "2014-12",
+          "status": "confirmed",
+          "affected": "Almost 79 million people",
+          "categories": [
+            "Names",
+            "Social Security numbers",
+            "Medical ID numbers",
+            "Home addresses",
+            "Dates of birth",
+            "Email addresses",
+            "Employment information"
+          ],
+          "description": "Attackers got in through phishing emails and stole data between December 2014 and January 2015, in what was then the largest health data breach in US history. In 2018 Anthem paid a record $16 million to settle with the US health regulator.",
+          "source_name": "US Department of Health and Human Services",
+          "source_url": "https://www.hhs.gov/about/news/2018/10/15/anthem-pays-ocr-16-million-record-hipaa-settlement-following-largest-health-data-breach-history.html",
+          "statement": null
+        }
+      ]
+    },
+    {
+      "name": "Latitude Financial",
+      "aliases": [
+        "Latitude",
+        "Gem Visa",
+        "GO Mastercard"
+      ],
+      "website": "latitudefinancial.com.au",
+      "breaches": [
+        {
+          "title": "2023 cyberattack",
+          "date": "2023-03",
+          "status": "confirmed",
+          "affected": "About 14 million customers and applicants in Australia and New Zealand",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Dates of birth",
+            "Driver's licence numbers",
+            "Passport numbers (some)",
+            "Income and expense information (some)",
+            "Bank account and card numbers (some, mostly closed)"
+          ],
+          "description": "An attacker used credentials stolen from a vendor to take data on current and past customers and applicants. About 7.9 million driver's licence numbers were among it. Latitude refused to pay a ransom.",
+          "source_name": "Latitude Financial",
+          "source_url": "https://www.latitudefinancial.com.au/about-us/media-releases/cybercrime-update-11-04-2023.html",
+          "statement": {
+            "title": "Cybercrime Update",
+            "url": "https://www.latitudefinancial.com.au/about-us/media-releases/cybercrime-update-11-04-2023.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Santander",
+      "aliases": [
+        "Banco Santander",
+        "Santander Bank"
+      ],
+      "website": "santander.com",
+      "breaches": [
+        {
+          "title": "2024 third-party database breach",
+          "date": "2024-05",
+          "status": "confirmed",
+          "affected": "Customers in Chile, Spain and Uruguay, plus current and some former employees",
+          "categories": [
+            "Names",
+            "Contact details",
+            "Account information"
+          ],
+          "description": "Santander said someone accessed a Santander database hosted by a third-party provider. It says the database held no transaction data or login details such as online banking passwords, and customers in other countries were not affected.",
+          "source_name": "Banco Santander",
+          "source_url": "https://www.santander.com/en/stories/statement",
+          "statement": {
+            "title": "Statement (Banco Santander, May 2024)",
+            "url": "https://www.santander.com/en/stories/statement"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Toyota",
+      "aliases": [
+        "Toyota Motor",
+        "T-Connect",
+        "G-Link"
+      ],
+      "website": "toyota.com",
+      "breaches": [
+        {
+          "title": "Connected car data left on a public cloud server",
+          "date": "2013",
+          "status": "confirmed",
+          "affected": "About 2.15 million customers in Japan",
+          "categories": [
+            "Vehicle identification numbers",
+            "In-car device IDs",
+            "Vehicle location data",
+            "Timestamps"
+          ],
+          "description": "A cloud server holding data from Toyota's connected car services in Japan was mistakenly set to public, leaving vehicle and location data accessible for about ten years until 2023. Toyota said it had not confirmed any misuse of the data.",
+          "source_name": "Toyota",
+          "source_url": "https://global.toyota/en/newsroom/corporate/39241625.html",
+          "statement": {
+            "title": "Apology and Notice Concerning Newly Discovered Potential Data Leakage of Customer Information Due to Cloud Settings",
+            "url": "https://global.toyota/en/newsroom/corporate/39241625.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PowerSchool",
+      "aliases": [],
+      "website": "powerschool.com",
+      "breaches": [
+        {
+          "title": "2024 student information system breach",
+          "date": "2024-12",
+          "status": "confirmed",
+          "affected": "Students and teachers at many US and Canadian schools",
+          "categories": [
+            "Names",
+            "Contact details",
+            "Dates of birth",
+            "Social Security or Social Insurance numbers (some)",
+            "Medical alert information (some)"
+          ],
+          "description": "An attacker used one stolen login to reach PowerSchool's customer support portal and copy student and teacher data from schools using its student information system. PowerSchool says no card or banking data was involved and offered identity protection.",
+          "source_name": "PowerSchool",
+          "source_url": "https://www.powerschool.com/security/sis-incident/",
+          "statement": {
+            "title": "PowerSchool Cybersecurity Incident",
+            "url": "https://www.powerschool.com/security/sis-incident/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Robinhood",
+      "aliases": [
+        "Robinhood Markets"
+      ],
+      "website": "robinhood.com",
+      "breaches": [
+        {
+          "title": "2021 customer support social engineering attack",
+          "date": "2021-11",
+          "status": "confirmed",
+          "affected": "About 5 million email addresses and 2 million names",
+          "categories": [
+            "Email addresses",
+            "Names",
+            "Phone numbers (several thousand)",
+            "Dates of birth and ZIP codes (a few hundred)"
+          ],
+          "description": "An attacker tricked a customer support employee by phone and got into support systems, then demanded a ransom. Robinhood says no Social Security, bank account or card numbers were exposed.",
+          "source_name": "Robinhood",
+          "source_url": "https://www.robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update",
+          "statement": {
+            "title": "Robinhood Announces Data Security Incident (Update)",
+            "url": "https://www.robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cash App",
+      "aliases": [
+        "Block",
+        "Square",
+        "Cash App Investing"
+      ],
+      "website": "cash.app",
+      "breaches": [
+        {
+          "title": "Former employee downloaded investing reports",
+          "date": "2021-12",
+          "status": "confirmed",
+          "affected": "About 8.2 million current and former US customers",
+          "categories": [
+            "Names",
+            "Brokerage account numbers",
+            "Portfolio values and holdings (some)"
+          ],
+          "description": "A former employee downloaded Cash App Investing reports after their job ended. Block says the reports did not include usernames, passwords, Social Security numbers, dates of birth, card details, addresses or bank account information.",
+          "source_name": "Block, SEC Form 8-K",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312522095215/d343042d8k.htm",
+          "statement": {
+            "title": "Block Form 8-K, April 2022",
+            "url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312522095215/d343042d8k.htm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ledger",
+      "aliases": [
+        "Ledger wallet"
+      ],
+      "website": "ledger.com",
+      "breaches": [
+        {
+          "title": "2020 e-commerce and marketing database breach",
+          "date": "2020-06",
+          "status": "confirmed",
+          "affected": "About 292,000 customers' full details and more than 1 million email addresses",
+          "categories": [
+            "Email addresses",
+            "Names",
+            "Home addresses",
+            "Phone numbers"
+          ],
+          "description": "An attacker used a third-party API key to access Ledger's e-commerce and marketing database. The data was later published online, leading to phishing and threats against crypto wallet owners. Ledger says wallets and funds were not affected.",
+          "source_name": "Ledger",
+          "source_url": "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach",
+          "statement": {
+            "title": "Addressing the July 2020 e-commerce and marketing data breach",
+            "url": "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chegg",
+      "aliases": [],
+      "website": "chegg.com",
+      "breaches": [
+        {
+          "title": "Repeated breaches from 2017 to 2020",
+          "date": "2018",
+          "status": "confirmed",
+          "affected": "About 40 million users and employees",
+          "categories": [
+            "Email addresses",
+            "Names",
+            "Hashed passwords",
+            "Scholarship data (religion, ethnicity, date of birth, income)",
+            "Employee financial and medical information"
+          ],
+          "description": "The US Federal Trade Commission said Chegg's careless security led to four breaches, including one where a former contractor used shared login details to access data on about 40 million customers. Chegg agreed to an FTC order in 2023.",
+          "source_name": "US Federal Trade Commission",
+          "source_url": "https://www.ftc.gov/news-events/news/press-releases/2022/10/ftc-brings-action-against-ed-tech-provider-chegg-careless-security-exposed-personal-data-millions",
+          "statement": null
+        }
+      ]
+    },
+    {
+      "name": "Air France-KLM",
+      "aliases": [
+        "KLM",
+        "Air France",
+        "Flying Blue"
+      ],
+      "website": "klm.com",
+      "breaches": [
+        {
+          "title": "2025 customer service platform breach",
+          "date": "2025-08",
+          "status": "confirmed",
+          "affected": "Some Air France and KLM customers",
+          "categories": [
+            "Names",
+            "Contact details",
+            "Flying Blue numbers and status",
+            "Customer service messages"
+          ],
+          "description": "Air France and KLM found unusual activity on an external platform used for customer service, where someone accessed customer data. They say internal systems were not affected and no passwords, travel details, miles, passport or card details were taken. KLM reported it to the Dutch Data Protection Authority.",
+          "source_name": "KLM",
+          "source_url": "https://nieuws.klm.com/klm-informeert-klanten-over-incident-met-persoonsgegevens/",
+          "statement": {
+            "title": "KLM informeert klanten over incident met persoonsgegevens",
+            "url": "https://nieuws.klm.com/klm-informeert-klanten-over-incident-met-persoonsgegevens/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Free",
+      "aliases": [
+        "Free Mobile",
+        "Iliad",
+        "Freebox"
+      ],
+      "website": "free.fr",
+      "breaches": [
+        {
+          "title": "2024 subscriber data theft",
+          "date": "2024-10",
+          "status": "confirmed",
+          "affected": "Data from 24 million subscriber contracts",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Phone numbers",
+            "Email addresses",
+            "Dates of birth",
+            "Bank account numbers (IBAN, some)"
+          ],
+          "description": "An attacker got into the systems of French telecom operators Free and Free Mobile in October 2024 and accessed subscriber data, including bank account numbers for some customers. In 2026 France's data protection authority, the CNIL, fined the two companies €42 million.",
+          "source_name": "CNIL (French data protection authority)",
+          "source_url": "https://www.cnil.fr/fr/sanction-free-2026",
+          "statement": null
+        }
+      ]
+    },
+    {
+      "name": "Mailchimp",
+      "aliases": [
+        "Intuit Mailchimp"
+      ],
+      "website": "mailchimp.com",
+      "breaches": [
+        {
+          "title": "2023 internal tool breach",
+          "date": "2023-01",
+          "status": "confirmed",
+          "affected": "133 Mailchimp business accounts",
+          "categories": [
+            "Account details",
+            "Email audience data (contact lists)"
+          ],
+          "description": "Attackers used social engineering on Mailchimp staff to get into an internal customer support tool and reach 133 customer accounts, some belonging to crypto companies. It was Mailchimp's third similar incident in under a year.",
+          "source_name": "Mailchimp",
+          "source_url": "https://mailchimp.com/newsroom/january-2023-security-incident/",
+          "statement": {
+            "title": "Information About a Recent Security Incident",
+            "url": "https://mailchimp.com/newsroom/january-2023-security-incident/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Twilio",
+      "aliases": [
+        "Authy"
+      ],
+      "website": "twilio.com",
+      "breaches": [
+        {
+          "title": "2022 SMS phishing attack on employees",
+          "date": "2022-08",
+          "status": "confirmed",
+          "affected": "209 customer accounts and 93 Authy users",
+          "categories": [
+            "Customer account data",
+            "Phone numbers"
+          ],
+          "description": "Attackers sent fake text messages to Twilio employees and used stolen logins to reach internal tools and data from some customer accounts. Some of that data was then used to target users of apps like Signal.",
+          "source_name": "Twilio",
+          "source_url": "https://www.twilio.com/en-us/blog/august-2022-social-engineering-attack",
+          "statement": {
+            "title": "Incident Report: Employee and Customer Account Compromise",
+            "url": "https://www.twilio.com/en-us/blog/august-2022-social-engineering-attack"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GoDaddy",
+      "aliases": [
+        "Go Daddy"
+      ],
+      "website": "godaddy.com",
+      "breaches": [
+        {
+          "title": "2021 Managed WordPress breach",
+          "date": "2021-09",
+          "status": "confirmed",
+          "affected": "Up to 1.2 million Managed WordPress customers",
+          "categories": [
+            "Email addresses",
+            "Customer numbers",
+            "WordPress admin passwords (original)",
+            "Website database and SFTP passwords",
+            "Website security certificate keys (some)"
+          ],
+          "description": "Using a stolen password, an attacker got into GoDaddy's Managed WordPress system in September 2021 and went unnoticed until November. GoDaddy reset the exposed passwords and reissued certificates.",
+          "source_name": "GoDaddy, SEC Form 8-K",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1609711/000160971121000122/gddyblogpostnov222021.htm",
+          "statement": {
+            "title": "GoDaddy blog post on the data security incident (filed with the SEC)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1609711/000160971121000122/gddyblogpostnov222021.htm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo",
+      "aliases": [
+        "Nintendo Network ID",
+        "NNID"
+      ],
+      "website": "nintendo.com",
+      "breaches": [
+        {
+          "title": "2020 Nintendo Network ID account takeovers",
+          "date": "2020-04",
+          "status": "confirmed",
+          "affected": "About 300,000 accounts",
+          "categories": [
+            "Nicknames",
+            "Dates of birth",
+            "Country and region",
+            "Email addresses"
+          ],
+          "description": "Attackers logged into Nintendo Network IDs using passwords stolen elsewhere, and some used linked Nintendo Accounts to buy items. Nintendo says its own servers were not breached and no card data was exposed. It ended NNID sign-in to Nintendo Accounts and refunded fraudulent purchases.",
+          "source_name": "Nintendo (Japanese)",
+          "source_url": "https://support.nintendo.com/jp/information/2020/0424.html",
+          "statement": {
+            "title": "「ニンテンドーネットワークID」に対する不正ログイン発生のご報告",
+            "url": "https://support.nintendo.com/jp/information/2020/0424.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Deezer",
+      "aliases": [],
+      "website": "deezer.com",
+      "breaches": [
+        {
+          "title": "Data leak at a former partner",
+          "date": "2019",
+          "status": "confirmed",
+          "affected": "Deezer users whose data was held by the former partner",
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Email addresses",
+            "Locations (country, city)"
+          ],
+          "description": "In 2022 Deezer learned that a service provider it stopped working with in 2020 had kept a 2019 copy of user data instead of deleting it, and that copy was hacked. Deezer says its own systems were not affected and no passwords or payment details were exposed.",
+          "source_name": "Deezer",
+          "source_url": "https://support.deezer.com/hc/en-gb/articles/7726141292317-Third-Party-Data-Breach",
+          "statement": {
+            "title": "Third Party Data Breach",
+            "url": "https://support.deezer.com/hc/en-gb/articles/7726141292317-Third-Party-Data-Breach"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Allianz Life",
+      "aliases": [
+        "Allianz"
+      ],
+      "website": "allianzlife.com",
+      "breaches": [
+        {
+          "title": "2025 cloud system breach",
+          "date": "2025-07",
+          "status": "confirmed",
+          "affected": "Allianz Life customers, financial professionals and some employees in the US",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Dates of birth",
+            "Social Security numbers"
+          ],
+          "description": "On 16 July 2025 an attacker accessed a cloud-based system used by the US insurer Allianz Life. Allianz says there is no evidence its own network or other systems were accessed.",
+          "source_name": "Allianz Life",
+          "source_url": "https://www.allianzlife.com/-/media/Files/Global/documents/2025/08/15/20/07/ELN-24716-Life-Ins-notification-sample_2025-08.pdf",
+          "statement": {
+            "title": "Notice of Data Security Incident (sample letter)",
+            "url": "https://www.allianzlife.com/-/media/Files/Global/documents/2025/08/15/20/07/ELN-24716-Life-Ins-notification-sample_2025-08.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Coupang",
+      "aliases": [],
+      "website": "coupang.com",
+      "breaches": [
+        {
+          "title": "2025 customer account exposure",
+          "date": "2025-06",
+          "status": "confirmed",
+          "affected": "About 33.7 million customer accounts in South Korea",
+          "categories": [
+            "Names",
+            "Email addresses",
+            "Phone numbers",
+            "Shipping addresses",
+            "Order information (some)"
+          ],
+          "description": "Using a stolen internal security key, a former employee accessed South Korean customer accounts from June 2025, going unnoticed until November. Coupang says payment details, logins and ID documents were not accessed, and offered vouchers to every affected customer.",
+          "source_name": "Coupang",
+          "source_url": "https://www.aboutcoupang.com/update-on-the-november-29-personal-information-incident/",
+          "statement": {
+            "title": "Update on the November 29 personal information incident",
+            "url": "https://www.aboutcoupang.com/update-on-the-november-29-personal-information-incident/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SK Telecom",
+      "aliases": [
+        "SKT",
+        "SK Telecom Korea"
+      ],
+      "website": "sktelecom.com",
+      "breaches": [
+        {
+          "title": "2025 USIM data hack",
+          "date": "2025-04",
+          "status": "confirmed",
+          "affected": "About 23 million subscribers (according to South Korea's privacy regulator)",
+          "categories": [
+            "Phone numbers",
+            "SIM card identifiers (IMSI)",
+            "SIM authentication keys"
+          ],
+          "description": "Malware planted on SK Telecom's systems let hackers take SIM card data that could be used to clone SIMs. SK Telecom offered free SIM replacements, and in 2025 South Korea's privacy regulator fined it a record 134.8 billion won, which SK Telecom is appealing.",
+          "source_name": "SK Telecom",
+          "source_url": "https://news.sktelecom.com/en/1979",
+          "statement": {
+            "title": "SK Telecom Announces Accountability and Commitment Program",
+            "url": "https://news.sktelecom.com/en/1979"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bouygues Telecom",
+      "aliases": [
+        "Bouygues"
+      ],
+      "website": "bouyguestelecom.fr",
+      "breaches": [
+        {
+          "title": "2025 customer data cyberattack",
+          "date": "2025-08",
+          "status": "confirmed",
+          "affected": "6.4 million customer accounts",
+          "categories": [
+            "Names",
+            "Contact details",
+            "Dates of birth",
+            "Contract details",
+            "Bank account numbers (IBAN)"
+          ],
+          "description": "French telecom operator Bouygues Telecom detected a cyberattack on 4 August 2025 that exposed personal data from 6.4 million customer accounts. It says passwords and card numbers were not affected, and it reported the attack to the CNIL and the police.",
+          "source_name": "Bouygues Telecom",
+          "source_url": "https://www.corporate.bouyguestelecom.fr/archives-communique-presse/bouygues-telecom-annonce-avoir-ete-victime-dune-cyberattaque/",
+          "statement": {
+            "title": "Bouygues Telecom, victime d'une cyberattaque",
+            "url": "https://www.corporate.bouyguestelecom.fr/archives-communique-presse/bouygues-telecom-annonce-avoir-ete-victime-dune-cyberattaque/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orange Belgium",
+      "aliases": [
+        "Orange"
+      ],
+      "website": "orange.be",
+      "breaches": [
+        {
+          "title": "2025 cyberattack",
+          "date": "2025-07",
+          "status": "confirmed",
+          "affected": "About 850,000 customer accounts",
+          "categories": [
+            "Names",
+            "Phone numbers",
+            "SIM card numbers",
+            "PUK codes",
+            "Tariff plans"
+          ],
+          "description": "Orange Belgium found a cyberattack on one of its IT systems at the end of July 2025. It says no passwords, email addresses or bank details were taken. Leaked PUK codes can help fraudsters take over phone numbers.",
+          "source_name": "Orange Belgium",
+          "source_url": "https://corporate.orange.be/en/node/57971",
+          "statement": {
+            "title": "Orange Belgium informs its customers about a cyberattack",
+            "url": "https://corporate.orange.be/en/node/57971"
+          }
+        }
+      ]
+    },
+    {
+      "name": "TransUnion",
+      "aliases": [
+        "Trans Union"
+      ],
+      "website": "transunion.com",
+      "breaches": [
+        {
+          "title": "2025 customer support application breach",
+          "date": "2025-07",
+          "status": "confirmed",
+          "affected": "About 4.4 million US consumers",
+          "categories": [
+            "Names",
+            "Social Security numbers",
+            "Dates of birth"
+          ],
+          "description": "An attacker used social engineering to get into a third-party application used by TransUnion's customer support. TransUnion says its core credit database was not affected and offered affected consumers credit monitoring.",
+          "source_name": "TransUnion, Form 10-K",
+          "source_url": "https://investors.transunion.com/~/media/Files/T/Transunion-IR-V2/reports-and-presentations/q4-2025-form-10-k.pdf",
+          "statement": null
+        }
+      ]
+    },
+    {
+      "name": "Odido",
+      "aliases": [
+        "T-Mobile Nederland",
+        "Ben"
+      ],
+      "website": "odido.nl",
+      "breaches": [
+        {
+          "title": "2026 customer data hack",
+          "date": "2026-02",
+          "status": "confirmed",
+          "affected": "6.2 million customer accounts of Odido and Ben (according to Odido)",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Phone numbers",
+            "Email addresses",
+            "Dates of birth",
+            "Bank account numbers (IBAN)",
+            "ID document numbers",
+            "Customer service notes"
+          ],
+          "description": "Hackers got into Odido's customer database by phishing customer service staff and pretending to be the IT department. Odido refused to pay and the criminals published the data. The Dutch Data Protection Authority is also looking at whether Odido kept former customers' data too long.",
+          "source_name": "NOS",
+          "source_url": "https://nos.nl/artikel/2602283-odido-hackers-kwamen-binnen-via-phishing-deden-zich-voor-als-ict-afdeling",
+          "statement": null
+        }
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "aliases": [
+        "Microsoft Corporation"
+      ],
+      "website": "microsoft.com",
+      "breaches": [
+        {
+          "title": "2024 Midnight Blizzard email hack",
+          "date": "2023-11",
+          "status": "confirmed",
+          "affected": "A small share of Microsoft corporate email accounts, including senior leadership",
+          "categories": [
+            "Emails and attachments",
+            "Internal documents",
+            "Source code (some repositories)"
+          ],
+          "description": "A Russian state-sponsored group got into a test account through password spraying, then read corporate email of senior leaders and security and legal staff. Microsoft later said the group used the stolen information to try to get into source code and internal systems.",
+          "source_name": "Microsoft Security Response Center",
+          "source_url": "https://www.microsoft.com/en-us/msrc/blog/2024/01/microsoft-actions-following-attack-by-nation-state-actor-midnight-blizzard",
+          "statement": {
+            "title": "Microsoft Actions Following Attack by Nation State Actor Midnight Blizzard",
+            "url": "https://www.microsoft.com/en-us/msrc/blog/2024/01/microsoft-actions-following-attack-by-nation-state-actor-midnight-blizzard"
           }
         }
       ]
