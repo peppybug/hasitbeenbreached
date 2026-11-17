@@ -1,21 +1,21 @@
 /* Home page only. Shared tokens and components live in site.css. */
 .hero{padding-top:56px;padding-bottom:64px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
-.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);line-height:1;letter-spacing:-.035em;margin:0 0 20px}
-.hero h1 em{font-style:normal;color:var(--accent)}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);line-height:1.1;letter-spacing:-.035em;margin:0 0 20px}
+.hero h1 em{font-style:normal;color:var(--ink);background:var(--pink);padding:0 .12em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .hero .lead{font-size:1.15rem;margin-bottom:0}
 .search{margin-top:28px;display:flex;gap:8px;background:var(--surface);padding:6px;border-radius:10px;border:1px solid var(--line-strong);transition:border-color .15s}
 .search:focus-within{border-color:var(--accent);outline:3px solid var(--accent-soft)}
 .search input{flex:1;min-width:0;border:0;background:transparent;font:500 1.1rem var(--body);padding:0 12px;min-height:50px;color:var(--ink)}
 .search input:focus{outline:none}
-.search input::placeholder{color:#8A8E9A;opacity:1}
+.search input::placeholder{color:#767B8E;opacity:1}
 .search .btn{min-height:50px}
 .try{margin:14px 0 0;font-size:.95rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
 .try button{background:none;border:0;padding:0;font:500 .95rem var(--body);color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
 .try button:hover{color:var(--accent-dark)}
 .assure{display:flex;flex-wrap:wrap;gap:6px 20px;margin:28px 0 0;padding:0;list-style:none;font-size:.95rem;color:var(--muted)}
 .assure li{display:flex;align-items:center;gap:8px}
-.assure li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.assure li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--pink)}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero{padding-top:32px}}
 @media(max-width:520px){.search{flex-direction:column}.search .btn{width:100%}}
 
@@ -41,9 +41,9 @@
 .facts dd{margin:0}
 .facts .wide{grid-column:1/-1}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0;padding:0;list-style:none}
-.tags li{background:#F1F1EE;color:var(--ink);padding:3px 9px;border-radius:6px;font-size:.88rem}
+.tags li{background:var(--accent-soft);color:#0A3DB0;padding:3px 9px;border-radius:6px;font-size:.88rem}
 .plain{margin:14px 0 0;font-size:.98rem}
-.caveat{margin:14px 0 0;padding:10px 12px;background:#FFF6E0;border-radius:8px;font-size:.93rem}
+.caveat{margin:14px 0 0;padding:10px 12px;background:var(--pink-soft);border-radius:8px;font-size:.93rem}
 .src{margin:12px 0 0;font-size:.9rem;color:var(--muted)}.src a{word-break:break-word}
 .fix{margin:18px 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:.9rem}
 @media(max-width:480px){.facts{grid-template-columns:1fr;gap:2px}.facts dd{margin-bottom:8px}}
@@ -57,7 +57,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 /* how it works: a numbered list, not cards */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;counter-reset:s}
 .steps li{counter-increment:s}
-.steps li::before{content:counter(s);display:block;font:700 1rem/1 var(--display);color:var(--accent);margin-bottom:12px;padding-bottom:12px;border-bottom:2px solid var(--accent);width:2rem}
+.steps li::before{content:counter(s);display:block;font:700 1rem/1 var(--display);color:var(--accent);margin-bottom:12px;padding-bottom:12px;border-bottom:3px solid var(--pink);width:2rem}
 .steps h3{margin:0 0 6px;font-size:1.2rem}
 .steps p{margin:0;color:var(--muted)}
 .limits{margin-top:40px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -79,7 +79,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
 .faq summary{cursor:pointer;list-style:none;padding:18px 2px;font:600 1.08rem/1.35 var(--body);display:flex;justify-content:space-between;align-items:center;gap:16px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";flex:none;font:400 1.5rem/1 var(--body);color:var(--muted)}
+.faq summary::after{content:"+";flex:none;font:600 1.5rem/1 var(--body);color:var(--accent)}
 .faq details[open] summary::after{content:"–"}
 .faq details p{padding:0 2px 18px;margin:0;color:var(--muted)}
 

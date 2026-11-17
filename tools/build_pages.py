@@ -17,7 +17,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title} – Has it been Breached?</title>
 <meta name="description" content="{description}">
-<meta name="theme-color" content="#F6F6F4">
+<meta name="theme-color" content="#F0F0F0">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,8 +1,8 @@
-/* Has it been Breached? — shared styles. Calm, readable, trustworthy: flat surfaces, thin borders, one accent colour. */
+/* Has it been Breached? — shared styles. Calm, readable, trustworthy: flat surfaces, thin borders. Palette: Marshmallow White #F0F0F0, Galactic Violet #105BFF, Bubblegum Pink #FF80B5, ink #14172B. */
 :root{
- --bg:#F6F6F4;--surface:#FFFFFF;--ink:#16181F;--muted:#565B6B;--line:#E2E2DE;--line-strong:#C9C9C3;
- --accent:#1F4FE0;--accent-dark:#173DB0;--accent-soft:#EDF1FD;
- --pink:#E8508A;--pink-soft:#FCEBF2;
+ --bg:#F0F0F0;--surface:#FFFFFF;--ink:#14172B;--muted:#4A4F66;--line:#D9DBE3;--line-strong:#B9BCC8;
+ --accent:#105BFF;--accent-dark:#0B47D1;--accent-soft:#E3ECFF;
+ --pink:#FF80B5;--pink-soft:#FFE8F1;
  --err:#B3261E;--ok:#146C2E;
  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -23,15 +23,16 @@ a:hover{color:var(--accent-dark)}
 .skip:focus{left:12px}
 
 /* header */
-header.site{position:sticky;top:0;z-index:30;background:rgba(246,246,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header.site{position:sticky;top:0;z-index:30;background:rgba(240,240,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:8px 16px;min-height:64px}
 .logo{display:inline-flex;align-items:center;gap:10px;font:700 1.05rem/1 var(--display);letter-spacing:-.01em;color:var(--ink);text-decoration:none}
 .logo:hover{color:var(--ink)}
-.logo i{flex:none;width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;font:800 1.1rem/1 var(--display);font-style:normal;display:grid;place-items:center}
+.logo i{position:relative;flex:none;width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;font:800 1.1rem/1 var(--display);font-style:normal;display:grid;place-items:center}
+.logo i::after{content:"";position:absolute;right:-3px;top:-3px;width:10px;height:10px;border-radius:50%;background:var(--pink);border:2px solid var(--bg)}
 header.site nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;align-items:center}
 header.site nav a{display:block;padding:8px 12px;color:var(--muted);text-decoration:none;font-weight:500;border-radius:8px;font-size:.97rem}
 header.site nav a:hover{color:var(--ink);background:rgba(22,24,31,.05)}
-header.site nav a[aria-current="page"]{color:var(--ink);font-weight:600}
+header.site nav a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:6px}
 header.site nav a.btn{display:inline-flex;color:#fff;margin-left:8px;padding:0 16px}
 header.site nav a.btn:hover{color:#fff;background:var(--accent-dark)}
 .hide-sm{display:block}
@@ -54,7 +55,7 @@ h2{font-size:clamp(1.45rem,3vw,1.85rem);margin:44px 0 12px}
 h3{font-size:1.15rem;margin:24px 0 8px}
 .lead{font-size:1.18rem;color:var(--muted);max-width:38em}
 ul.list,ol.list{padding-left:1.3em;margin:0 0 14px}ul.list li,ol.list li{margin-bottom:6px}
-.note{background:var(--accent-soft);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 20px}
+.note{background:var(--pink-soft);border-left:3px solid var(--pink);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 20px}
 .ph{background:#FFF3B0;border-bottom:2px dashed #B38600;padding:0 3px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px}
 .card h2,.card h3{margin-top:0}
@@ -63,7 +64,7 @@ ul.list,ol.list{padding-left:1.3em;margin:0 0 14px}ul.list li,ol.list li{margin-
 .scroll{overflow-x:auto;margin:0 0 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
 table{border-collapse:collapse;width:100%;min-width:520px;font-size:.97rem}
 th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
-th{background:#FAFAF8;font-weight:600}tr:last-child td{border-bottom:0}
+th{background:var(--accent-soft);font-weight:600}tr:last-child td{border-bottom:0}
 .muted{color:var(--muted)}
 .updated{font-size:.9rem;color:var(--muted)}
 
