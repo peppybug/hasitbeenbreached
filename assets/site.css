@@ -30,7 +30,7 @@ header.site{position:sticky;top:0;z-index:30;background:rgba(240,240,240,.92);ba
 .logo i{position:relative;flex:none;width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;font:800 1.1rem/1 var(--display);font-style:normal;display:grid;place-items:center}
 .logo i::after{content:"";position:absolute;right:-3px;top:-3px;width:10px;height:10px;border-radius:50%;background:var(--pink);border:2px solid var(--bg)}
 header.site nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;align-items:center}
-header.site nav a{display:block;padding:8px 12px;color:var(--muted);text-decoration:none;font-weight:500;border-radius:8px;font-size:.97rem}
+header.site nav a{display:block;white-space:nowrap;padding:8px 12px;color:var(--muted);text-decoration:none;font-weight:500;border-radius:8px;font-size:.97rem}
 header.site nav a:hover{color:var(--ink);background:rgba(22,24,31,.05)}
 header.site nav a[aria-current="page"]{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:6px}
 header.site nav a.btn{display:inline-flex;color:#fff;margin-left:8px;padding:0 16px}

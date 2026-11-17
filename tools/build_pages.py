@@ -54,9 +54,16 @@ for src in sorted(PAGES.glob("*.html")):
     out = src.name
     current = ' aria-current="page"'
     nav = "".join(
-        '<li><a href="%s"%s>%s</a></li>' % (href, current if href == out else "", label)
+        '<li%s><a href="%s"%s>%s</a></li>' % (' class="hide-sm"' if href == "sources.html" else "", href, current if href == out else "", label)
         for href, label in NAV
     )
     html = TEMPLATE.format(title=meta["title"], description=meta["description"], nav=nav, body=body, src=src.name)
+    if out == "404.html":
+        # GitHub Pages serves 404.html at whatever bad address was requested, even deep ones like /a/b/c.
+        # Set a <base> so styles, scripts and links always resolve from the site root.
+        # If the site moves to its own domain, change this to "/".
+        base = '<base href="/hasitbeenbreached/">\n'
+        html = html.replace('<meta charset="utf-8">\n', '<meta charset="utf-8">\n' + base, 1)
+        html = html.replace('<main id="main"><div class="wrap narrow">', '<main id="main" class="nf-main"><div class="wrap">', 1)
     (ROOT / out).write_text(html, encoding="utf-8")
     print("built", out)

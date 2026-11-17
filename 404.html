@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<base href="/hasitbeenbreached/">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Page not found – Has it been Breached?</title>
-<meta name="description" content="This page doesn’t exist.">
+<meta name="description" content="This page doesn’t exist. Search a company’s breach history instead.">
 <meta name="theme-color" content="#F0F0F0">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +18,130 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
   <a class="logo" href="./" aria-label="Has it been Breached? home"><i aria-hidden="true">?</i><span>Has it been Breached?</span></a>
-  <nav aria-label="Main"><ul><li><a href="about.html">About</a></li><li><a href="sources.html">Data sources</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn sm" href="./#search">Search</a></li></ul></nav>
+  <nav aria-label="Main"><ul><li><a href="about.html">About</a></li><li class="hide-sm"><a href="sources.html">Data sources</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn sm" href="./#search">Search</a></li></ul></nav>
 </div></header>
-<main id="main"><div class="wrap narrow">
-<h1>Page not found</h1>
-<p class="lead">This page doesn’t exist, or it has moved.</p>
-<p><a class="btn" href="./">Search a company</a></p>
+<main id="main" class="nf-main"><div class="wrap">
+<style>
+.nf-main{padding:32px 0 8px}
+.nf{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center}
+.nf-art svg{display:block;width:100%;height:auto;max-width:560px;margin:0 auto}
+.nf-art .digit{font:800 210px/1 var(--display);letter-spacing:-.06em;fill:var(--ink)}
+.nf-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;font-size:.92rem;color:var(--muted)}
+.nf-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--pink)}
+.nf h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.035em;margin:0 0 14px}
+.nf h1 em{font-style:normal;color:var(--accent)}
+.nf .lead{margin:0 0 22px}
+
+/* the joke breach report */
+.nf-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 24px 48px -32px rgba(16,91,255,.3);margin-top:8px}
+.nf-bar{display:flex;align-items:center;gap:10px;padding:0 16px;height:42px;border-bottom:1px solid var(--line);background:#FAFAFB;font-weight:600;font-size:.88rem}
+.nf-bar i{width:10px;height:10px;border-radius:50%;background:var(--line);display:inline-block}
+.nf-bar b{width:18px;height:18px;border-radius:5px;background:var(--accent);color:#fff;font:800 .72rem/18px var(--display);text-align:center;margin-left:6px}
+.nf-body{padding:18px 20px 20px}
+.nf-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 10px}
+.nf-top h2{font-size:1.4rem;margin:0}
+.nf-pill{font-size:.82rem;font-weight:600;padding:3px 10px;border-radius:999px;background:#EEF0F5;color:#3D4256}
+.nf-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0 0}
+.nf-facts div{background:var(--bg);border-radius:10px;padding:10px 12px}
+.nf-facts dt{font-size:.78rem;color:var(--muted)}
+.nf-facts dd{margin:2px 0 0;font-weight:600;font-size:.95rem}
+.nf-what{margin:14px 0 0;font-size:.98rem}
+.nf-search{margin:18px 0 0;display:flex;gap:8px;background:var(--surface);padding:5px;border-radius:999px;border:1px solid var(--line-strong)}
+.nf-search:focus-within{border-color:var(--accent);outline:3px solid var(--accent-soft)}
+.nf-search input{flex:1;min-width:0;border:0;background:transparent;font:500 1.02rem var(--body);padding:0 14px;min-height:44px;color:var(--ink)}
+.nf-search input:focus{outline:none}
+.nf-search .btn{border-radius:999px;min-height:44px}
+.nf-try{margin:12px 0 0;font-size:.92rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}
+.nf-try a{font-weight:500}
+.nf-home{margin:18px 0 0;font-size:.95rem}
+
+/* gentle motion, off for people who ask for less */
+@media (prefers-reduced-motion: no-preference){
+  .nf-glass{transform-origin:280px 128px;animation:nf-search 5s ease-in-out infinite}
+  .nf-float{animation:nf-float 6s ease-in-out infinite}
+  .nf-float.f2{animation-delay:-2s}.nf-float.f3{animation-delay:-4s}
+  .nf-paper{transform-origin:280px 150px;animation:nf-sway 7s ease-in-out infinite}
+  .nf-blink{animation:nf-blink 2.4s steps(1) infinite}
+  @keyframes nf-search{0%,100%{transform:translate(0,0) rotate(-4deg)}25%{transform:translate(-14px,6px) rotate(3deg)}50%{transform:translate(8px,-6px) rotate(-2deg)}75%{transform:translate(14px,8px) rotate(5deg)}}
+  @keyframes nf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes nf-sway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(-4deg)}}
+  @keyframes nf-blink{0%,100%{opacity:1}50%{opacity:.25}}
+}
+@media(max-width:860px){.nf{grid-template-columns:1fr;gap:20px}.nf-art svg{max-width:420px}}
+@media(max-width:520px){.nf-facts{grid-template-columns:1fr}.nf-search{flex-direction:column;border-radius:14px}.nf-search .btn{width:100%;border-radius:10px}}
+</style>
+
+<div class="nf">
+  <div class="nf-art">
+    <svg viewBox="0 0 560 300" role="img" aria-labelledby="nf-art-title">
+      <title id="nf-art-title">A big 404, where the zero is a magnifying glass searching for a missing page</title>
+      <!-- soft backdrop -->
+      <ellipse cx="280" cy="268" rx="230" ry="16" fill="#14172B" opacity=".07"/>
+      <circle cx="280" cy="142" r="128" fill="#E3ECFF"/>
+      <!-- floating bits -->
+      <g class="nf-float"><rect x="52" y="38" width="18" height="18" rx="5" fill="#FF80B5"/></g>
+      <g class="nf-float f2"><circle cx="500" cy="60" r="9" fill="#105BFF"/></g>
+      <g class="nf-float f3"><path d="M486 214h22M497 203v22" stroke="#FF80B5" stroke-width="5" stroke-linecap="round"/></g>
+      <g class="nf-float f2"><path d="M128 40h18M137 31v18" stroke="#105BFF" stroke-width="4" stroke-linecap="round"/></g>
+      <!-- the two 4s -->
+      <text class="digit" x="28" y="236">4</text>
+      <text class="digit" x="404" y="236">4</text>
+      <!-- torn page behind the glass -->
+      <g class="nf-paper">
+        <path d="M222 70h104l30 30v66l-12 8 10 10-14 9 12 11-10 12H222z" fill="#fff" stroke="#14172B" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M326 70v30h30" fill="none" stroke="#14172B" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="240" y="96" width="62" height="9" rx="4.5" fill="#D9DBE3"/>
+        <rect x="240" y="116" width="86" height="9" rx="4.5" fill="#FF80B5"/>
+        <rect x="240" y="136" width="74" height="9" rx="4.5" fill="#D9DBE3"/>
+        <rect x="240" y="156" width="50" height="9" rx="4.5" fill="#D9DBE3"/>
+        <rect x="240" y="176" width="66" height="9" rx="4.5" fill="#D9DBE3"/>
+      </g>
+      <!-- magnifying glass = the 0 -->
+      <g class="nf-glass">
+        <path d="M336 186l52 52" stroke="#14172B" stroke-width="22" stroke-linecap="round"/>
+        <path d="M336 186l52 52" stroke="#105BFF" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="280" cy="128" r="74" fill="#fff" fill-opacity=".72" stroke="#14172B" stroke-width="16"/>
+        <circle cx="280" cy="128" r="74" fill="none" stroke="#105BFF" stroke-width="6"/>
+        <path d="M236 98a52 52 0 0 1 34-24" stroke="#fff" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <text x="280" y="160" text-anchor="middle" style="font:800 92px var(--display);fill:#105BFF">?</text>
+        <circle class="nf-blink" cx="336" cy="70" r="13" fill="#FF80B5" stroke="#fff" stroke-width="5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div>
+    <p class="nf-kicker">Error 404</p>
+    <h1>This page has gone <em>missing.</em></h1>
+    <p class="lead">We searched everywhere, but there’s no page at this address. Good news: no data was harmed.</p>
+
+    <article class="nf-card" aria-label="Breach report for this page">
+      <div class="nf-bar"><i></i><i></i><i></i><b aria-hidden="true">?</b>Breach report</div>
+      <div class="nf-body">
+        <div class="nf-top"><h2>This page</h2><span class="nf-pill">Nothing exposed</span></div>
+        <dl class="nf-facts">
+          <div><dt>When</dt><dd>Just now</dd></div>
+          <div><dt>Affected</dt><dd>You, briefly</dd></div>
+          <div><dt>Made known</dt><dd>Immediately</dd></div>
+        </dl>
+        <p class="nf-what"><strong>What happened:</strong> the page you asked for doesn’t exist, or it has moved. The link may be old or mistyped.</p>
+        <form class="nf-search" id="nf-search" role="search" aria-label="Company search">
+          <label for="nf-q" class="sr">Company name or website</label>
+          <input id="nf-q" type="search" placeholder="Search a company instead" autocomplete="off" minlength="2" maxlength="100" required>
+          <button class="btn" type="submit">Check history</button>
+        </form>
+        <p class="nf-try">Try <a href="./?q=Booking.com">Booking.com</a><a href="./?q=Odido">Odido</a><a href="./?q=Discord">Discord</a></p>
+      </div>
+    </article>
+    <p class="nf-home"><a href="./">Back to the homepage</a></p>
+  </div>
+</div>
+<script>
+document.getElementById('nf-search').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var t = document.getElementById('nf-q').value.trim();
+  if (t.length > 1) location.href = document.baseURI.replace(/[^/]*$/, '') + '?q=' + encodeURIComponent(t);
+});
+</script>
 </div></main>
 <footer class="site"><div class="wrap">
   <div class="foot">

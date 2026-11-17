@@ -51,6 +51,10 @@ Edit the file in `tools/pages/`, then run:
 python3 tools/build_pages.py
 ```
 
+## Moving to your own domain
+
+The 404 page uses `<base href="/hasitbeenbreached/">` (set in `tools/build_pages.py`) so it works at any bad address. If the site moves to its own domain, change it to `/` and rebuild.
+
 ## Previewing locally
 
 ```bash
