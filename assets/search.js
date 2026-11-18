@@ -12,6 +12,8 @@
     return String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '')
       .replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/[^a-z0-9]+/g, ' ').trim();
   }
+  /* Same rule as slug() in tools/build_pages.py, which builds company/<slug>.html. */
+  function slug(s) { return String(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
   function keys(c) { return [c.name, c.website, c.website.replace(/\.[a-z.]+$/, '')].concat(c.aliases).map(norm); }
 
   function find(term) {
@@ -159,6 +161,7 @@
     if (banner) h.appendChild(el('p', 'result-label', banner));
     h.appendChild(el('h3', 0, c.name));
     if (c.aliases.length) h.appendChild(el('p', 'aka', 'Also known as ' + c.aliases.join(', ')));
+    var pl = el('p', 'permalink'), pa = el('a', 0, 'Open the full page for ' + c.name + ' →'); pa.href = 'company/' + slug(c.name); pl.appendChild(pa); h.appendChild(pl);
     if (c.breaches.length) h.appendChild(track(c));
     a.appendChild(h);
     var b = el('div', 'result-body');
@@ -186,6 +189,11 @@
       mark(r.map(function (c) { return c.name; }));
       if (!r.length) {
         msg('No matches for “' + term + '”. That doesn’t mean the company has never had a breach. Our database is small and doesn’t cover every company.');
+        /* Opens the visitor's own email app. Nothing is sent unless they choose to send it. */
+        var rq = el('div', 'request'); rq.appendChild(el('p', 'rq-title', 'Want “' + term + '” added?'));
+        rq.appendChild(el('p', 'rq-text', 'Send a request and the company will be researched from official public sources. Requests decide what gets added next.'));
+        var ra = el('a', 'btn sm', 'Request this company'); ra.href = 'mailto:contact@hasitbeenbreached.com?subject=' + encodeURIComponent('Please add: ' + term) + '&body=' + encodeURIComponent('Hi, please add ' + term + ' to Has it been Breached?\n\nIf you know of a breach, a link to a public source helps:\n');
+        rq.appendChild(ra); out.appendChild(rq);
       } else {
         msg(r.length + (r.length > 1 ? ' matches' : ' match') + ' for “' + term + '”.');
         r.forEach(function (c) { out.appendChild(card(c)); });
