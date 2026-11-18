@@ -78,6 +78,7 @@ table.levels td.lvl{white-space:nowrap}
 footer.site{border-top:1px solid var(--line);margin-top:72px;padding:44px 0 32px;background:var(--surface)}
 footer.site a{color:var(--muted);text-decoration:none}footer.site a:hover{color:var(--ink);text-decoration:underline}
 footer.site .logo{color:var(--ink)}
+footer.site a.logo:hover{text-decoration:none}
 footer.site .tag{margin-top:12px;max-width:26em;color:var(--muted);font-size:.95rem}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
 footer.site h2{font:600 .9rem var(--body);letter-spacing:0;color:var(--ink);margin:0 0 10px}
