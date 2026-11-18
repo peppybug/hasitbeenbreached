@@ -54,14 +54,7 @@ new = [
   source_url="https://www.sec.gov/Archives/edgar/data/0000868611/000086861117000050/soncfy201710k.htm",
   statement=None, disclosed="2017-10", outcomes=[])]},
 
- {"name": "Saks Fifth Avenue", "aliases": ["Saks OFF 5TH", "Lord & Taylor", "Hudson's Bay Company", "HBC"], "website": "saksfifthavenue.com", "breaches": [B(
-  title="Payment card theft at department stores", date="2017-05", status="confirmed", timing_unclear=True,
-  affected="Cards used at certain North American stores; HBC did not give a total",
-  categories=["Payment card numbers", "Card expiry dates"],
-  description="In 2018 Hudson’s Bay Company said card data had been stolen at certain Saks Fifth Avenue, Saks OFF 5TH and Lord & Taylor stores in North America. It said online shopping, Saks credit cards and other personal details were not affected, and customers would not pay for fraudulent charges.",
-  source_name="Hudson’s Bay Company", source_url="http://investor.hbc.com/news-releases/news-release-details/hbc-provides-update-previously-announced-data-security-issue",
-  statement=own("HBC Provides Update on Previously-Announced Data Security Issue", "http://investor.hbc.com/news-releases/news-release-details/hbc-provides-update-previously-announced-data-security-issue"),
-  disclosed="2018-04", outcomes=[])]},
+ {"name": "Carphone Warehouse", "aliases": ["The Carphone Warehouse"], "website": "carphonewarehouse.com", "breaches": [{"title": "2015 cyber attack", "date": "2015-07", "status": "confirmed", "affected": "More than 3 million customers and 1,000 employees", "categories": ["Names", "Home addresses", "Phone numbers", "Dates of birth", "Marital status", "Payment card details (about 18,000 customers)"], "description": "In 2015 attackers got into a computer system of Carphone Warehouse, a UK mobile phone retailer, using old software it had not kept up to date. Personal data of more than 3 million customers and 1,000 employees was exposed, including historical card details for some customers. The UK Information Commissioner’s Office fined the company £400,000 in 2018.", "source_name": "UK Information Commissioner’s Office, data security report", "source_url": "https://ico.org.uk/media2/migrated/2014675/data-security-trends-pdf.pdf", "statement": None, "disclosed": "2015-08", "outcomes": [{"kind": "fine", "text": "Fined £400,000 by the UK Information Commissioner’s Office", "year": 2018}]}]},
 
  {"name": "DocuSign", "aliases": [], "website": "docusign.com", "breaches": [B(
   title="2017 theft of customer email addresses", date="2017-05", status="confirmed",

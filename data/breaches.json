@@ -3806,11 +3806,11 @@
             "Driver’s licence numbers (about 100,000 drivers)"
           ],
           "description": "In May 2019 an attacker got into DoorDash data through a third-party service provider. About 4.9 million customers, delivery drivers and restaurants who joined before April 2018 were affected. DoorDash said full card numbers were not taken.",
-          "source_name": "DoorDash",
-          "source_url": "https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996",
+          "source_name": "DoorDash (archived copy of its 2019 notice)",
+          "source_url": "https://web.archive.org/web/20190927/https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996",
           "statement": {
             "title": "Important security notice about your DoorDash account",
-            "url": "https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996"
+            "url": "https://web.archive.org/web/20190927/https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996"
           },
           "disclosed": "2019-09",
           "outcomes": []
@@ -5556,38 +5556,6 @@
       ]
     },
     {
-      "name": "Saks Fifth Avenue",
-      "aliases": [
-        "Saks OFF 5TH",
-        "Lord & Taylor",
-        "Hudson's Bay Company",
-        "HBC"
-      ],
-      "website": "saksfifthavenue.com",
-      "breaches": [
-        {
-          "title": "Payment card theft at department stores",
-          "date": "2017-05",
-          "status": "confirmed",
-          "timing_unclear": true,
-          "affected": "Cards used at certain North American stores; HBC did not give a total",
-          "categories": [
-            "Payment card numbers",
-            "Card expiry dates"
-          ],
-          "description": "In 2018 Hudson’s Bay Company said card data had been stolen at certain Saks Fifth Avenue, Saks OFF 5TH and Lord & Taylor stores in North America. It said online shopping, Saks credit cards and other personal details were not affected, and customers would not pay for fraudulent charges.",
-          "source_name": "Hudson’s Bay Company",
-          "source_url": "http://investor.hbc.com/news-releases/news-release-details/hbc-provides-update-previously-announced-data-security-issue",
-          "statement": {
-            "title": "HBC Provides Update on Previously-Announced Data Security Issue",
-            "url": "http://investor.hbc.com/news-releases/news-release-details/hbc-provides-update-previously-announced-data-security-issue"
-          },
-          "disclosed": "2018-04",
-          "outcomes": []
-        }
-      ]
-    },
-    {
       "name": "DocuSign",
       "aliases": [],
       "website": "docusign.com",
@@ -6137,6 +6105,470 @@
               "kind": "settlement",
               "text": "Agreed to spend $3.5 million on security under a deal with New York’s Attorney General",
               "year": 2023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Personal Touch Home Care",
+      "aliases": [
+        "Personal Touch",
+        "Personal Touch Holding Corp"
+      ],
+      "website": "pthomecare.com",
+      "breaches": [
+        {
+          "title": "2021 ransomware attack on a home care company",
+          "date": "2021-01",
+          "status": "confirmed",
+          "affected": "About 316,845 New Yorkers",
+          "categories": [
+            "Names",
+            "Health and medical information",
+            "Health insurance details",
+            "Employee personal data"
+          ],
+          "description": "In January 2021 an employee of Personal Touch, a Long Island home health care company, opened a malicious attachment in a phishing email, which let ransomware attackers in. Unencrypted patient files of about 316,845 New Yorkers were exposed. In 2023 Personal Touch paid $350,000 to New York State and offered free credit monitoring.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2023/attorney-general-james-secures-350000-long-island-home-health-care-company",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $350,000 to New York State",
+              "year": 2023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Practicefirst",
+      "aliases": [
+        "Practicefirst Medical Management Solutions",
+        "Professional Business Systems",
+        "PBS Medcode"
+      ],
+      "website": "practicefirst.com",
+      "breaches": [
+        {
+          "title": "2020 ransomware attack on a medical billing company",
+          "date": "2020-12",
+          "status": "confirmed",
+          "affected": "More than 1.2 million people",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Dates of birth",
+            "Social Security numbers",
+            "Driver’s licence numbers",
+            "Medical information"
+          ],
+          "description": "In December 2020 ransomware attackers took 79,000 files from Practicefirst, a medical management company in Erie County, New York, that handles billing for doctors. More than 1.2 million people were affected. New York’s Attorney General found it had not updated its software or tested its security, and it paid $550,000 in 2023.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2023/attorney-general-james-recoups-550000-erie-county-medical-management-company",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $550,000 to New York State",
+              "year": 2023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Refuah Health Center",
+      "aliases": [
+        "Refuah Health"
+      ],
+      "website": "refuahhealth.org",
+      "breaches": [
+        {
+          "title": "2021 ransomware attack on a health centre",
+          "date": "2021-05",
+          "status": "confirmed",
+          "affected": "More than 260,000 patients",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Social Security numbers",
+            "Driver’s licence numbers",
+            "Bank account numbers",
+            "Health insurance numbers",
+            "Health information"
+          ],
+          "description": "In May 2021 ransomware attackers got into Refuah Health Center, a Hudson Valley health provider, and reached files on more than 260,000 patients. It had not closed old accounts, used two-step login or encrypted patient data. In 2024 it agreed to spend $1.2 million on security and pay New York State.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2024/attorney-general-james-reaches-agreement-hudson-valley-health-care-provider",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Agreed to spend $1.2 million on security and pay $450,000 ($100,000 suspended)",
+              "year": 2024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Albany ENT & Allergy",
+      "aliases": [
+        "AENT",
+        "Albany ENT & Allergy Services"
+      ],
+      "website": "albanyentandallergy.com",
+      "breaches": [
+        {
+          "title": "2023 ransomware attacks on a medical practice",
+          "date": "2023",
+          "status": "confirmed",
+          "timing_unclear": true,
+          "affected": "213,935 New Yorkers",
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Social Security numbers (some patients)",
+            "Health records"
+          ],
+          "description": "In 2023 ransomware attackers got into the systems of Albany ENT & Allergy, a medical practice in New York’s Capital Region, and reached patient records of 213,935 New Yorkers. It had no in-house security expert and did not properly oversee its IT suppliers. In 2024 it agreed to pay $500,000 and spend $2.25 million on security.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2024/attorney-general-james-secures-225-million-capital-region-health-care-provider",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $500,000 and agreed to spend $2.25 million on security",
+              "year": 2024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Healthplex",
+      "aliases": [],
+      "website": "healthplex.com",
+      "breaches": [
+        {
+          "title": "2021 phishing attack on a dental insurer",
+          "date": "2021-11",
+          "status": "confirmed",
+          "affected": "Tens of thousands of consumers",
+          "categories": [
+            "Health information",
+            "Dental insurance ID numbers",
+            "Names"
+          ],
+          "description": "In late 2021 a customer service employee at Healthplex, a New York dental insurance company, clicked a phishing email and gave attackers access to an email account holding consumer health data. It had no two-step login on email and reported the breach months late. New York’s financial regulator fined it $2 million in 2025.",
+          "source_name": "New York State Department of Financial Services",
+          "source_url": "https://www.dfs.ny.gov/reports_and_publications/press_releases/pr20250814",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined $2 million by New York’s financial regulator",
+              "year": 2025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unum",
+      "aliases": [
+        "First Unum",
+        "Paul Revere Life Insurance",
+        "Unum Group"
+      ],
+      "website": "unum.com",
+      "breaches": [
+        {
+          "title": "Phishing of employee email accounts",
+          "date": "2018-09",
+          "status": "confirmed",
+          "affected": "Thousands of customers nationally",
+          "categories": [
+            "Customer personal information and insurance claims",
+            "Health information (some customers)"
+          ],
+          "description": "From September 2018 phishing emails tricked employees of First Unum and Paul Revere, US insurers owned by Unum, into giving away their email passwords. Customer data in those mailboxes was exposed. The companies had not fully set up two-step login, despite certifying they had. New York’s financial regulator fined them $1.8 million in 2021.",
+          "source_name": "New York State Department of Financial Services",
+          "source_url": "https://www.dfs.ny.gov/reports_and_publications/press_releases/pr202105131",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined $1.8 million by New York’s financial regulator",
+              "year": 2021
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heidell, Pittoni, Murphy & Bach",
+      "aliases": [
+        "HPMB"
+      ],
+      "website": "hpmb.com",
+      "breaches": [
+        {
+          "title": "2021 ransomware attack on a law firm",
+          "date": "2021-12",
+          "status": "confirmed",
+          "affected": "Patients and others named in legal files; no total given in the summary",
+          "categories": [
+            "Medical and personal information in legal files"
+          ],
+          "description": "Around Christmas 2021 LockBit ransomware hit HPMB, a New York law firm that represents hospitals in lawsuits, and the firm paid a $100,000 ransom. Its files held patients’ medical and personal information. The firm later settled with New York’s Attorney General.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/sites/default/files/aod_-_final_hpmb.pdf",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Settled with New York’s Attorney General",
+              "year": 2023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "National Amusements",
+      "aliases": [
+        "Showcase Cinemas"
+      ],
+      "website": "nationalamusements.com",
+      "breaches": [
+        {
+          "title": "Breach of employee data at a cinema company",
+          "date": "2022",
+          "status": "confirmed",
+          "timing_unclear": true,
+          "affected": "More than 23,000 New York employees and contractors",
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Social Security numbers",
+            "Passport numbers",
+            "Bank account numbers",
+            "Driver’s licence numbers",
+            "Health insurance account numbers"
+          ],
+          "description": "An attacker used an employee’s stolen VPN login, which had no two-step login, to get into the network of National Amusements, which runs Showcase Cinemas. Data of more than 23,000 New York employees and contractors was exposed, and the company waited over a year to tell them. It said cinema customers were not affected. It paid $250,000 to New York State in 2024.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2024/attorney-general-james-secures-250000-movie-theater-operator-failing-protect",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $250,000 to New York State",
+              "year": 2024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HealthAlliance",
+      "aliases": [
+        "HealthAlliance Hospital",
+        "Margaretville Hospital"
+      ],
+      "website": "hahv.org",
+      "breaches": [
+        {
+          "title": "2023 attack through an unpatched flaw",
+          "date": "2023-09",
+          "status": "confirmed",
+          "affected": "About 242,641 New Yorkers",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Dates of birth",
+            "Social Security numbers",
+            "Medical diagnoses",
+            "Lab test results",
+            "Medications (health information)"
+          ],
+          "description": "HealthAlliance, which runs hospitals in New York’s Hudson Valley, knew of a security flaw but couldn’t patch it and kept the system running. In September and October 2023 attackers used it to steal patient and employee records. In 2024 it agreed to a $1.4 million penalty, of which it pays $550,000.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2024/attorney-general-james-secures-550000-hudson-valley-health-care-facility",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Agreed to a $1.4 million penalty, paying $550,000 (the rest suspended)",
+              "year": 2024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wojeski & Company",
+      "aliases": [],
+      "website": "wojeski.com",
+      "breaches": [
+        {
+          "title": "Ransomware attack and data breach at an accounting firm",
+          "date": "2023-07",
+          "status": "confirmed",
+          "affected": "More than 4,700 New Yorkers",
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Social Security numbers",
+            "Driver’s licence numbers",
+            "Bank account numbers",
+            "Medical benefits information"
+          ],
+          "description": "Wojeski & Company, an accounting firm in Albany, New York, suffered a ransomware attack in July 2023 and a data breach in May 2024, exposing clients’ personal and financial details. In 2025 it paid $60,000 to New York State and agreed to tighten its security.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2025/attorney-general-james-announces-settlement-accounting-firm-failing-protect-new",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $60,000 to New York State",
+              "year": 2025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "US Radiology Specialists",
+      "aliases": [
+        "Windsong Radiology"
+      ],
+      "website": "usradiology.com",
+      "breaches": [
+        {
+          "title": "2021 attack through an old network device",
+          "date": "2021-12",
+          "status": "confirmed",
+          "affected": "198,260 patients",
+          "categories": [
+            "Names",
+            "Dates of birth",
+            "Social Security numbers",
+            "Health insurance details",
+            "Medical information"
+          ],
+          "description": "In December 2021 an attacker used a known flaw in outdated network hardware to get into US Radiology Specialists and stole personal and health information of 198,260 patients of Windsong Radiology in Western New York. In 2023 it paid $450,000 to New York State.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2023/attorney-general-james-secures-450000-medical-company-providing-services-western",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $450,000 to New York State",
+              "year": 2023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OrthopedicsNY",
+      "aliases": [
+        "OrthoNY"
+      ],
+      "website": "orthony.com",
+      "breaches": [
+        {
+          "title": "2023 theft of patient and employee files",
+          "date": "2023",
+          "status": "confirmed",
+          "timing_unclear": true,
+          "affected": "About 656,000 people",
+          "categories": [
+            "Names",
+            "Social Security numbers (about 110,000 people)",
+            "Health information"
+          ],
+          "description": "In 2023 attackers used a stolen login to get remote access to the network of OrthopedicsNY, an orthopaedic practice in New York’s Capital Region, and downloaded unencrypted files about 656,000 patients and employees. In 2025 it paid $500,000 to New York State and funded a year of free credit monitoring.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2025/attorney-general-james-secures-500000-capital-region-health-care-provider",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $500,000 to New York State",
+              "year": 2025
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sports Warehouse",
+      "aliases": [
+        "Tennis Warehouse",
+        "Running Warehouse"
+      ],
+      "website": "tennis-warehouse.com",
+      "breaches": [
+        {
+          "title": "Theft from a server of card data stored since 2002",
+          "date": "2020",
+          "status": "confirmed",
+          "timing_unclear": true,
+          "affected": "Up to 1.8 million payment cards and 1.2 million logins",
+          "categories": [
+            "Payment card numbers (stored unencrypted)",
+            "Account logins"
+          ],
+          "description": "An attacker got into the shop server of Sports Warehouse, which runs online stores such as Tennis Warehouse and Running Warehouse. It held payment card details for nearly every purchase since 2002, in plain text, plus customer logins. In 2023 the company paid $300,000 to New York State.",
+          "source_name": "New York State Attorney General",
+          "source_url": "https://ag.ny.gov/press-release/2023/attorney-general-james-secures-300000-online-sporting-goods-retailers-failing",
+          "statement": null,
+          "outcomes": [
+            {
+              "kind": "settlement",
+              "text": "Paid $300,000 to New York State",
+              "year": 2023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Carphone Warehouse",
+      "aliases": [
+        "The Carphone Warehouse"
+      ],
+      "website": "carphonewarehouse.com",
+      "breaches": [
+        {
+          "title": "2015 cyber attack",
+          "date": "2015-07",
+          "status": "confirmed",
+          "affected": "More than 3 million customers and 1,000 employees",
+          "categories": [
+            "Names",
+            "Home addresses",
+            "Phone numbers",
+            "Dates of birth",
+            "Marital status",
+            "Payment card details (about 18,000 customers)"
+          ],
+          "description": "In 2015 attackers got into a computer system of Carphone Warehouse, a UK mobile phone retailer, using old software it had not kept up to date. Personal data of more than 3 million customers and 1,000 employees was exposed, including historical card details for some customers. The UK Information Commissioner’s Office fined the company £400,000 in 2018.",
+          "source_name": "UK Information Commissioner’s Office, data security report",
+          "source_url": "https://ico.org.uk/media2/migrated/2014675/data-security-trends-pdf.pdf",
+          "statement": null,
+          "disclosed": "2015-08",
+          "outcomes": [
+            {
+              "kind": "fine",
+              "text": "Fined £400,000 by the UK Information Commissioner’s Office",
+              "year": 2018
             }
           ]
         }

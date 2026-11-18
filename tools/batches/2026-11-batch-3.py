@@ -133,9 +133,9 @@ new = [
   title="2019 breach through a third-party provider", date="2019-05", status="confirmed", affected="About 4.9 million customers, drivers and restaurants",
   categories=["Names", "Email addresses", "Delivery addresses", "Phone numbers", "Order history", "Hashed passwords", "Last four digits of payment cards (some customers)", "Driver’s licence numbers (about 100,000 drivers)"],
   description="In May 2019 an attacker got into DoorDash data through a third-party service provider. About 4.9 million customers, delivery drivers and restaurants who joined before April 2018 were affected. DoorDash said full card numbers were not taken.",
-  source_name="DoorDash",
-  source_url="https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996",
-  statement={"title": "Important security notice about your DoorDash account", "url": "https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996"},
+  source_name="DoorDash (archived copy of its 2019 notice)",
+  source_url="https://web.archive.org/web/20190927/https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996",
+  statement={"title": "Important security notice about your DoorDash account", "url": "https://web.archive.org/web/20190927/https://blog.doordash.com/important-security-notice-about-your-doordash-account-ddd90ddf5996"},
   disclosed="2019-09", outcomes=[])]},
 
  {"name": "Hertz", "aliases": ["Dollar", "Thrifty"], "website": "hertz.com", "breaches": [B(
