@@ -98,7 +98,8 @@ def fmt(d):
     return p[0] if len(p) == 1 else "%s %s" % (MONTHS[int(p[1]) - 1], p[0])
 
 def slug(name):
-    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+    # Same steps as slug() in assets/search.js: drop accents, then turn anything else into hyphens.
+    s = "".join(ch for ch in unicodedata.normalize("NFKD", name) if not unicodedata.combining(ch)).lower()
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 def ym(s):
