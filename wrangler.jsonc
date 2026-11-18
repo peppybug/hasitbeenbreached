@@ -1,0 +1,11 @@
+// Cloudflare Worker that serves this repo as a static site at hasitbeenbreached.com.
+// Missing pages show 404.html. Files listed in .assetsignore are not published.
+{
+  "name": "hasitbeenbreached",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}

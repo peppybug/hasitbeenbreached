@@ -1,0 +1,13 @@
+# Repo files that must not be served on the website
+.git
+.github
+.claude
+.impeccable
+tools
+README.md
+PRODUCT.md
+DESIGN.md
+wrangler.jsonc
+.assetsignore
+.nojekyll
+.gitignore

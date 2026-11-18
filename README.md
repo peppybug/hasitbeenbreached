@@ -2,7 +2,7 @@
 
 Search a company's publicly documented data breach history before you share your data with it.
 
-A static website: no server, no accounts, no tracking. Search runs in the visitor's browser over `data/breaches.json`, so it can be hosted for free on GitHub Pages.
+A static website: no server, no accounts, no tracking. Search runs in the visitor's browser over `data/breaches.json`, so it can be hosted for free. It is served at https://hasitbeenbreached.com by a Cloudflare Worker that builds from `main` (see `wrangler.jsonc`; `.assetsignore` keeps repo-only files off the site).
 
 ## Files
 
@@ -51,9 +51,9 @@ Edit the file in `tools/pages/`, then run:
 python3 tools/build_pages.py
 ```
 
-## Moving to your own domain
+## Hosting
 
-The 404 page uses `<base href="/hasitbeenbreached/">` (set in `tools/build_pages.py`) so it works at any bad address. If the site moves to its own domain, change it to `/` and rebuild.
+Cloudflare rebuilds the site whenever `main` changes. The 404 page sets its base address itself, so it works at the domain root and at the old GitHub Pages address.
 
 ## Previewing locally
 

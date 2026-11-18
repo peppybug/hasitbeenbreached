@@ -61,8 +61,9 @@ for src in sorted(PAGES.glob("*.html")):
     if out == "404.html":
         # GitHub Pages serves 404.html at whatever bad address was requested, even deep ones like /a/b/c.
         # Set a <base> so styles, scripts and links always resolve from the site root.
-        # If the site moves to its own domain, change this to "/".
-        base = '<base href="/hasitbeenbreached/">\n'
+        # Works both at the domain root (hasitbeenbreached.com) and under /hasitbeenbreached/ (old GitHub Pages address).
+        base = ('<script>(function(){var r="/hasitbeenbreached/";'
+                'document.write(\'<base href="\'+(location.pathname.indexOf(r)===0?r:"/")+\'">\')})();</script>\n')
         html = html.replace('<meta charset="utf-8">\n', '<meta charset="utf-8">\n' + base, 1)
         html = html.replace('<main id="main"><div class="wrap narrow">', '<main id="main" class="nf-main"><div class="wrap">', 1)
     (ROOT / out).write_text(html, encoding="utf-8")
