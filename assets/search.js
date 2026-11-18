@@ -36,8 +36,8 @@
   }
 
   /* How risky each type of exposed data is for the people affected. Not colour alone: tags are sorted, labelled and explained in a legend. */
-  var HIGH = /social security|insurance number|citizen service|bsn|passport|licen[cs]e|id number|id document|government id|payment card|card number|security code|cvv|bank account|brokerage account|password|passcode|puk code|authentication key|session token|private key|certificate key|security question|health|medicare|medical|claims|test result|genetic|ancestry|ethnicity|income|credit|criminal|sexual/i;
-  var MED = /date of birth|dates of birth|home address|billing address|shipping address|phone|location|family tree|expiry|booking|stay|order|contact details|ip address|household|demographic|employment|call and text|emails and attachments|customer service|support messages|account balance|transaction|portfolio|payout|sim card/i;
+  var HIGH = /social security|insurance number|citizen service|bsn|passport|licen[cs]e|id number|id document|government id|payment card|card number|security code|cvv|bank account|brokerage account|password|passcode|puk code|authentication key|session token|private key|certificate key|security question|health|medicare|medical|claims|test result|genetic|ancestry|ethnicity|income|credit|criminal|sexual|camera video|camera stream|login|salary|home access/i;
+  var MED = /date of birth|dates of birth|home address|billing address|shipping address|phone|location|family tree|expiry|booking|stay|order|contact details|ip address|household|demographic|employment|call and text|emails and attachments|customer service|support messages|account balance|transaction|portfolio|payout|sim card|banking/i;
   var PARTIAL = /masked|partial|last four/i;
   function sev(cat) { if ((PARTIAL.test(cat) && !/social security/i.test(cat)) || /sim card number/i.test(cat)) return 'med'; return HIGH.test(cat) ? 'high' : MED.test(cat) ? 'med' : 'low'; }
   var SEV_LABEL = { high: 'High risk', med: 'Medium risk', low: 'Lower risk' };
