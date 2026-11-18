@@ -228,7 +228,7 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 .tstat.risk-high{border-top-color:#D7263D}.tstat.risk-high .tv{color:#A3122A}
 .tstat.risk-med{border-top-color:#E08A00}.tstat.risk-med .tv{color:#8A4B00}
 .tstat.risk-low{border-top-color:#9AA0B4}
-.lagtag{display:inline-block;margin-left:8px;font-size:.8rem;font-weight:600;padding:1px 8px;border-radius:999px;vertical-align:1px}
+.lagtag{display:table;margin:6px 0 0;font-size:.8rem;font-weight:600;padding:1px 8px;border-radius:999px;vertical-align:1px}
 .lagtag.lag-fast{background:#E9F5EC;color:#146C2E}.lagtag.lag-mid{background:#FFF0D9;color:#8A4B00}.lagtag.lag-slow{background:#FDE7E9;color:#A3122A}
 .outcomes{margin:14px 0 0;padding:12px 14px;border-radius:12px;border:1px solid var(--line)}
 .outcomes .ol{margin:0 0 6px;font-size:.8rem;font-weight:600;color:var(--muted)}
@@ -237,7 +237,7 @@ section{padding:88px 0;border-top:1px solid var(--line)}
 .outcomes li.oc-fine{border-left-color:#D7263D}.outcomes li.oc-court{border-left-color:#E08A00}
 .okind{font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .otext{font-size:.95rem}
-@media(max-width:480px){.track-grid{grid-template-columns:1fr 1fr}.lagtag{margin:4px 0 0;display:table}}
+@media(max-width:480px){.track-grid{grid-template-columns:1fr 1fr}}
 
 /* ---------- desktop: company list sticks while the record scrolls ---------- */
 @media(min-width:821px){
