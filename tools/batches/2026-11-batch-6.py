@@ -37,7 +37,7 @@ new = [
 
  {"name": "South Staffordshire Water", "aliases": ["South Staffs Water", "South Staffordshire Plc", "Cambridge Water"], "website": "south-staffs-water.co.uk", "breaches": [B(
   title="Cyber attack on a water company", date="2020-09", status="confirmed", affected="633,887 people",
-  categories=["Names", "Home addresses", "Customer account details", "Bank details (some customers)"],
+  categories=["Names", "Home addresses", "Customer account details", "Bank account details (some customers)"],
   description="An attacker got into the network of South Staffordshire Water, a UK water supplier, in September 2020 and stayed for almost two years before it was found in July 2022. Data of 633,887 people was then published on the dark web. The UK Information Commissioner’s Office found only 5% of its systems were monitored and fined it £963,900 in 2026.",
   source_name="UK Information Commissioner’s Office",
   source_url="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/05/fine-of-nearly-1m-issued-against-south-staffordshire-plc-and-south-staffordshire-water-plc/",
