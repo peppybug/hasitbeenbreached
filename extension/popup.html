@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Has it been Breached?</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="https://hasitbeenbreached.com/" target="_blank" rel="noopener"><img src="icons/icon-32.png" alt="" width="24" height="24"><span>Has it been Breached?</span></a>
+</header>
+<main>
+  <section id="current" aria-live="polite"></section>
+  <form id="search" role="search">
+    <label for="q" class="sr">Search a company</label>
+    <input id="q" type="search" placeholder="Search a company" autocomplete="off" maxlength="100">
+  </form>
+  <ul id="results" class="results" hidden></ul>
+</main>
+<footer>The site you’re on is checked on your device and never sent anywhere.</footer>
+<script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@
   }
   /* Same rule as slug() in tools/build_pages.py, which builds company/<slug>.html. */
   function slug(s) { return String(s).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
-  function keys(c) { return [c.name, c.website, c.website.replace(/\.[a-z.]+$/, '')].concat(c.aliases).map(norm); }
+  function keys(c) { return [c.name, c.website, c.website.replace(/\.[a-z.]+$/, '')].concat(c.aliases, c.domains || []).map(norm); }
 
   function find(term) {
     var t = norm(term); if (t.length < 2) return [];

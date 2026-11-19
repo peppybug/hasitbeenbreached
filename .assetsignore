@@ -11,3 +11,4 @@ wrangler.jsonc
 .assetsignore
 .nojekyll
 .gitignore
+extension

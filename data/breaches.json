@@ -168,6 +168,11 @@
           "disclosed": "2024-05",
           "outcomes": []
         }
+      ],
+      "domains": [
+        "ticketmaster.co.uk",
+        "ticketmaster.nl",
+        "livenation.com"
       ]
     },
     {
@@ -915,6 +920,9 @@
           "disclosed": "2022-08",
           "outcomes": []
         }
+      ],
+      "domains": [
+        "twitter.com"
       ]
     },
     {
@@ -1732,6 +1740,12 @@
           "disclosed": "2025-08",
           "outcomes": []
         }
+      ],
+      "domains": [
+        "airfrance.com",
+        "airfrance.fr",
+        "klm.nl",
+        "flyingblue.com"
       ]
     },
     {
@@ -2388,6 +2402,12 @@
           "disclosed": "2025-04",
           "outcomes": []
         }
+      ],
+      "domains": [
+        "foodlion.com",
+        "stopandshop.com",
+        "giantfood.com",
+        "hannaford.com"
       ]
     },
     {
@@ -2609,6 +2629,10 @@
           "disclosed": "2023-12",
           "outcomes": []
         }
+      ],
+      "domains": [
+        "comcast.com",
+        "comcast.net"
       ]
     },
     {
@@ -2651,6 +2675,9 @@
             }
           ]
         }
+      ],
+      "domains": [
+        "playstation.net"
       ]
     },
     {
@@ -2896,6 +2923,13 @@
             }
           ]
         }
+      ],
+      "domains": [
+        "tjmaxx.com",
+        "marshalls.com",
+        "tkmaxx.com",
+        "tkmaxx.co.uk",
+        "homegoods.com"
       ]
     },
     {
@@ -3532,6 +3566,10 @@
             }
           ]
         }
+      ],
+      "domains": [
+        "line.me",
+        "yahoo.co.jp"
       ]
     },
     {
@@ -6628,6 +6666,10 @@
           "disclosed": "2015-12",
           "outcomes": []
         }
+      ],
+      "domains": [
+        "steampowered.com",
+        "steamcommunity.com"
       ]
     }
   ]
